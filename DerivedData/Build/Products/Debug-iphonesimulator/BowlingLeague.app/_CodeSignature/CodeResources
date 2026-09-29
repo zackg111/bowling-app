@@ -22,23 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AKgNs/M6TjrCbbCRrVslSdzJars=
+		EhFCSt5ITcrEFbYaH6eRYbrPO40=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
-		</data>
-		<key>PlugIns/BowlingLeagueTests.xctest/BowlingLeagueTests</key>
-		<data>
-		DWXUzuH+6b9Qlu1GC/bi9MIIxoU=
-		</data>
-		<key>PlugIns/BowlingLeagueTests.xctest/Info.plist</key>
-		<data>
-		gtXSQl5CyeCTN8vAvKA9d3blhz8=
-		</data>
-		<key>PlugIns/BowlingLeagueTests.xctest/_CodeSignature/CodeResources</key>
-		<data>
-		qrErgTRvAscJzSr9pvLSAGaYrB4=
 		</data>
 		<key>Watch/BowlingWatch.app/Assets.car</key>
 		<data>
@@ -46,7 +34,7 @@
 		</data>
 		<key>Watch/BowlingWatch.app/BowlingWatch</key>
 		<data>
-		MusbwXLxBWioHm38Esu15QzC3PI=
+		Zuh1Igm3RPx1h9EdJtAYvPUwsSA=
 		</data>
 		<key>Watch/BowlingWatch.app/BowlingWatch.debug.dylib</key>
 		<data>
@@ -54,7 +42,7 @@
 		</data>
 		<key>Watch/BowlingWatch.app/Info.plist</key>
 		<data>
-		rTKf2qog0hbCNd8Ets2AWu6ldpg=
+		4oXeu/ul8VVaoQE5KsrTLTmjGgk=
 		</data>
 		<key>Watch/BowlingWatch.app/PkgInfo</key>
 		<data>
@@ -62,7 +50,7 @@
 		</data>
 		<key>Watch/BowlingWatch.app/_CodeSignature/CodeResources</key>
 		<data>
-		1rxMsPM3PYFsiiRzlD5RazC4Hek=
+		CwmjtIkhFnsLng03SBt/rPBfT+s=
 		</data>
 		<key>Watch/BowlingWatch.app/__preview.dylib</key>
 		<data>
@@ -103,27 +91,6 @@
 			jmmUWrdA5MGrdzuSsw+BBuVRdl5XQKNZqfR1bcFvPQA=
 			</data>
 		</dict>
-		<key>PlugIns/BowlingLeagueTests.xctest/BowlingLeagueTests</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HRGBRyqwOhuQTEd7p9TMbbMm23yscaObj1ryfWkvVZs=
-			</data>
-		</dict>
-		<key>PlugIns/BowlingLeagueTests.xctest/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			a4pv8ImPW+zDDJ4nQyL847QktVhL15qlkIX8Z8yAH8k=
-			</data>
-		</dict>
-		<key>PlugIns/BowlingLeagueTests.xctest/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			s41mlD51fc9c0axHu9DeIeK+SUYelUDHvooOD/YRF7k=
-			</data>
-		</dict>
 		<key>Watch/BowlingWatch.app/Assets.car</key>
 		<dict>
 			<key>hash2</key>
@@ -135,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fbpjqDVXKzkM/U++0fOl8ZX5tdvhC8W96zLDfW3QOec=
+			qQ51cxN9YGnKzLxjbI9fhUGWsxpoO30gi0ZQ4J4fRUE=
 			</data>
 		</dict>
 		<key>Watch/BowlingWatch.app/BowlingWatch.debug.dylib</key>
@@ -149,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XwmN604axBGjd+BUdwYpk5wJOL4dpKHuhe7G0mjUe0k=
+			pAMsVhgmUTu9sh62tSnnh0WZnKGkWPfoxrpFQ+IUrHg=
 			</data>
 		</dict>
 		<key>Watch/BowlingWatch.app/PkgInfo</key>
@@ -163,7 +130,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PynNpsTjJ9YmUfkC6waTbq2iO5hPC72hhYDP7vxEmQU=
+			xzClwdAOdAF6rY0U00xyspFmYl06m88RSdmB5xDdQFk=
 			</data>
 		</dict>
 		<key>Watch/BowlingWatch.app/__preview.dylib</key>

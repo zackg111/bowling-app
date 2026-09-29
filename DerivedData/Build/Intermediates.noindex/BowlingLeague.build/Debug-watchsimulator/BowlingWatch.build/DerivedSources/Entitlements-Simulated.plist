@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>BM4PG2TLBY.com.example.BowlingLeague.watchkitapp</string>
+	<string>BM4PG2TLBY.com.goodnite.bowl.watchkitapp</string>
 	<key>com.apple.developer.healthkit</key>
 	<true/>
 	<key>com.apple.developer.healthkit.access</key>

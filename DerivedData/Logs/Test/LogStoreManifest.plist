@@ -6,10 +6,10 @@
 	<integer>13</integer>
 	<key>logs</key>
 	<dict>
-		<key>8EEA4B92-020D-49BC-BC98-4BB6894BA0A1</key>
+		<key>AECAA0FF-9B31-48A9-94BD-6415AE6C5A38</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>C231500F-5E72-41BD-B7E3-FA1E39FAA1A7</string>
+			<string>9C444D73-2DEB-4C24-87EB-BB9B4325CB19</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,46 +30,12 @@
 			<key>domainType</key>
 			<string>com.apple.dt.unit.cocoaUnitTest</string>
 			<key>fileName</key>
-			<string>Test-BowlingLeague-2026.09.29_15-06-02--0400.xcresult</string>
+			<string>Test-BowlingLeague-2026.09.29_15-22-15--0400.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>BowlingLeague project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>BowlingLeague</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Test BowlingLeague</string>
-			<key>timeStartedRecording</key>
-			<real>812401562.62390399</real>
-			<key>timeStoppedRecording</key>
-			<real>812402006.91372597</real>
-			<key>title</key>
-			<string>Test BowlingLeague</string>
-			<key>uniqueIdentifier</key>
-			<string>8EEA4B92-020D-49BC-BC98-4BB6894BA0A1</string>
-		</dict>
-		<key>D700F8C7-7300-467B-9747-EEC6BD4E3944</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>FAB802C8-1B68-49CE-BA39-C8DDBC9FCCB7</string>
-			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
 				<string>S</string>
@@ -82,31 +48,6 @@
 				<key>totalNumberOfWarnings</key>
 				<integer>0</integer>
 			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.unit.cocoaUnitTest</string>
-			<key>fileName</key>
-			<string>Test-BowlingLeague-2026.09.29_15-00-17--0400.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>BowlingLeague project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -116,13 +57,13 @@
 			<key>signature</key>
 			<string>Test BowlingLeague</string>
 			<key>timeStartedRecording</key>
-			<real>812401217.67327499</real>
+			<real>812402535.53512299</real>
 			<key>timeStoppedRecording</key>
-			<real>812401481.36206603</real>
+			<real>812402875.05333698</real>
 			<key>title</key>
 			<string>Test BowlingLeague</string>
 			<key>uniqueIdentifier</key>
-			<string>D700F8C7-7300-467B-9747-EEC6BD4E3944</string>
+			<string>AECAA0FF-9B31-48A9-94BD-6415AE6C5A38</string>
 		</dict>
 	</dict>
 </dict>
