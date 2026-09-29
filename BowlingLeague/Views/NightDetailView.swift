@@ -26,7 +26,8 @@ struct NightDetailView: View {
             case .island: IslandView(night: night)
             }
         }
-        .navigationTitle(night.title)
+        // Tap the title to rename the night.
+        .navigationTitle($night.title)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button("Add Bowlers", systemImage: "person.badge.plus") { showingAddBowlers = true }
@@ -42,6 +43,9 @@ struct ScoresView: View {
     var body: some View {
         List {
             Section {
+                TextField("Title", text: Bindable(night).title, prompt: Text("Night title"))
+                    .font(.headline)
+                    .submitLabel(.done)
                 DatePicker("Date", selection: Bindable(night).date, displayedComponents: .date)
             }
             Section("Bowlers") {
