@@ -68,10 +68,15 @@ struct DoublesView: View {
 
     private func pair() {
         let result = DoublesPairing.pair(night.entries, average: \.average, method: method)
-        night.entries.forEach { $0.doublesTeam = nil }
+        for entry in night.entries {
+            entry.doublesTeam = nil
+            entry.doublesPartnerName = nil
+        }
         for (number, (first, second)) in result.teams.enumerated() {
             first.doublesTeam = number + 1
             second.doublesTeam = number + 1
+            first.doublesPartnerName = second.bowler?.name
+            second.doublesPartnerName = first.bowler?.name
         }
     }
 }

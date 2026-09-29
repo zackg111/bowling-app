@@ -8,7 +8,9 @@ Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
 - **Bowlers**: every bowler with average and handicap at a glance,
   sorted by average. iPad shows a sortable table (average, handicap, games,
   high game, high series); iPhone shows a compact list. Tap for stats from every night bowled
-  (games, average, high game, high series, 200+ games, history).
+  (games, average, high game, high series, 200+ games, history). Each history
+  night shows who they doubled with; tap it to open that night scrolled to
+  their games.
 - **Profiles**: each bowler can have a photo (Photos picker, stored downscaled);
   otherwise they get a colored initials avatar.
 - **Roster changes**: add bowlers any time. "Remove" moves a bowler to Former
@@ -16,6 +18,12 @@ Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
   Forever" erases them and their scores.
 - **Nights**: pick who's bowling, enter games 1–3. Each row shows average,
   series handicap and Total With Handicap, like the sheet.
+- **In-game mode** (bowling-figure button on a night): score ball by ball as
+  the night is bowled. Tap the pins that fell on the pin deck, or tap a quick
+  count (-, 1–9, X, /). The 10-frame sheet fills in with marks and running
+  totals, it moves to the next bowler after each frame, Undo steps back across
+  bowlers, and a finished game becomes that bowler's score
+  (`Logic/GameSheet.swift`). Typed scores only accept 0–300.
 - **Doubles**: pair everyone (blind draw or high-with-low), then teams rank
   by combined Total With Handicap. An odd bowler out is listed separately.
 - **Eliminator**: handicapped game-by-game cut. Half the field, rounded up
@@ -33,8 +41,8 @@ Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
   swimmer gets back on by bowling the night's highest series, otherwise
   they're out for the season. "Record Island Results" applies it.
 - **Settings**: handicap base/percent and when the eliminator pays 4 places.
-- **Look**: rounded type, a lane-light orange accent, a slowly drifting mesh
-  gradient behind every screen (`Views/Theme.swift`), glass stat tiles, glass
+- **Look**: rounded type, a lane-light orange accent, a bowling lane (maple
+  boards, arrows, dots and pins) drawn behind every screen (`Views/Theme.swift`), glass stat tiles, glass
   score pills that glow gold for 200+ games, and date badges on nights.
 - **Layout**: iOS 26 Liquid Glass `TabView` (Home, Bowlers, Nights, Settings, Search).
   On iPad the tab bar becomes a sidebar (`.sidebarAdaptable`); on iPhone it

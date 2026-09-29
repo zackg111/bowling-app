@@ -56,15 +56,15 @@ struct BowlerDetailView: View {
 
             Section("History") {
                 ForEach(history) { entry in
-                    HStack {
-                        Text(entry.night?.date ?? .now, format: .dateTime.month().day())
-                        Spacer()
-                        Text(entry.games.map { $0.map(String.init) ?? "–" }.joined(separator: "  "))
-                            .monospacedDigit()
-                        Text("\(entry.scratchSeries)")
-                            .monospacedDigit()
-                            .bold()
-                            .frame(minWidth: 44, alignment: .trailing)
+                    // Tap a night to jump to it, scrolled to this bowler's games.
+                    if let night = entry.night {
+                        NavigationLink {
+                            NightDetailView(night: night, focus: bowler)
+                        } label: {
+                            HistoryRow(entry: entry)
+                        }
+                    } else {
+                        HistoryRow(entry: entry)
                     }
                 }
             }
@@ -75,6 +75,31 @@ struct BowlerDetailView: View {
             Button(bowler.isActive ? "Remove from League" : "Add Back to League",
                    systemImage: bowler.isActive ? "person.fill.xmark" : "person.fill.checkmark") {
                 bowler.isActive.toggle()
+            }
+        }
+    }
+}
+
+/// One night in a bowler's history: date, games, series and doubles partner.
+private struct HistoryRow: View {
+    let entry: Entry
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Text(entry.night?.date ?? .now, format: .dateTime.month().day())
+                Spacer()
+                Text(entry.games.map { $0.map(String.init) ?? "–" }.joined(separator: "  "))
+                    .monospacedDigit()
+                Text("\(entry.scratchSeries)")
+                    .monospacedDigit()
+                    .bold()
+                    .frame(minWidth: 44, alignment: .trailing)
+            }
+            if let partner = entry.partnerName {
+                Label("Doubles with \(partner)", systemImage: "person.2.fill")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
         }
     }

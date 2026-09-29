@@ -22,6 +22,8 @@ struct LeaderboardView: View {
     @Query(filter: #Predicate<Bowler> { $0.isPrimary }) private var primaries: [Bowler]
     @Query(filter: #Predicate<Shot> { $0.bowler == nil }) private var unassignedShots: [Shot]
     @State private var category: Category = .average
+    /// Bowler tapped on the podium.
+    @State private var podiumPick: Bowler?
 
     private var standings: [Ranked<Bowler>] {
         let counted = category == .average ? bowlers : bowlers.filter { category.value(for: $0) > 0 }
@@ -78,7 +80,7 @@ struct LeaderboardView: View {
 
             if !ranked.isEmpty {
                 Section {
-                    Podium(top: Array(ranked.prefix(3)))
+                    Podium(top: Array(ranked.prefix(3))) { podiumPick = $0 }
                         .listRowBackground(Color.clear)
                 }
 
@@ -103,6 +105,7 @@ struct LeaderboardView: View {
         .laneBackground()
         .navigationTitle("Leaderboard")
         .navigationDestination(for: Bowler.self) { BowlerDetailView(bowler: $0) }
+        .navigationDestination(item: $podiumPick) { BowlerDetailView(bowler: $0) }
         .overlay {
             if bowlers.isEmpty {
                 ContentUnavailableView {
@@ -169,8 +172,11 @@ private struct YouCard: View {
     }
 }
 
+/// The top three. Each spot is its own button: three NavigationLinks in one
+/// list row made the whole row one link, so a tap could open the wrong bowler.
 private struct Podium: View {
     let top: [Ranked<Bowler>]
+    let onSelect: (Bowler) -> Void
 
     var body: some View {
         // Second, first, third, so the leader stands in the middle.
@@ -178,7 +184,7 @@ private struct Podium: View {
         HStack(alignment: .bottom, spacing: 12) {
             ForEach(order, id: \.self) { index in
                 let row = top[index]
-                NavigationLink(value: row.item) {
+                Button { onSelect(row.item) } label: {
                     VStack(spacing: 6) {
                         AvatarView(bowler: row.item, size: index == 0 ? 84 : 64)
                         Text(row.item.name)
@@ -191,6 +197,7 @@ private struct Podium: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 12)
                     .glassEffect(in: .rect(cornerRadius: 20))
+                    .contentShape(.rect(cornerRadius: 20))
                 }
                 .buttonStyle(.plain)
             }

@@ -17,7 +17,7 @@ struct RootView: View {
             Tab("Home", systemImage: "trophy") {
                 NavigationStack { LeaderboardView() }
             }
-            Tab("Bowlers", systemImage: "person.3") {
+            Tab("Bowlers", systemImage: "figure.bowling") {
                 NavigationStack { BowlersView() }
             }
             Tab("Nights", systemImage: "calendar") {

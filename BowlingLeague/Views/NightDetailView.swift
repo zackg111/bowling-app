@@ -8,8 +8,11 @@ struct NightDetailView: View {
     }
 
     @Bindable var night: Night
+    /// Opened from this bowler's history: scroll to their games and highlight them.
+    var focus: Bowler? = nil
     @State private var tab: Tab = .scores
     @State private var showingAddBowlers = false
+    @State private var inGame = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -20,7 +23,7 @@ struct NightDetailView: View {
             .padding()
 
             switch tab {
-            case .scores: ScoresView(night: night)
+            case .scores: ScoresView(night: night, focus: focus)
             case .doubles: DoublesView(night: night)
             case .eliminator: EliminatorView(night: night)
             case .island: IslandView(night: night)
@@ -28,19 +31,36 @@ struct NightDetailView: View {
         }
         // Tap the title to rename the night.
         .navigationTitle($night.title)
+        .navigationSubtitle(Text(night.date, format: .dateTime.weekday(.wide).month().day().year()))
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
+            Button("In-Game Mode", systemImage: "figure.bowling") { inGame = true }
+                .disabled(night.entries.isEmpty)
             Button("Add Bowlers", systemImage: "person.badge.plus") { showingAddBowlers = true }
         }
         .sheet(isPresented: $showingAddBowlers) { AddBowlersToNightView(night: night) }
+        .fullScreenCover(isPresented: $inGame) { InGameView(night: night) }
     }
 }
 
 struct ScoresView: View {
     let night: Night
+    var focus: Bowler? = nil
     @Environment(\.modelContext) private var context
 
     var body: some View {
+        ScrollViewReader { proxy in
+            scores
+                .task {
+                    guard let focus, let entry = night.entries.first(where: { $0.bowler == focus }) else { return }
+                    // Give the list a moment to lay out before scrolling.
+                    try? await Task.sleep(for: .milliseconds(150))
+                    withAnimation { proxy.scrollTo(entry.persistentModelID, anchor: .center) }
+                }
+        }
+    }
+
+    private var scores: some View {
         List {
             Section {
                 TextField("Title", text: Bindable(night).title, prompt: Text("Night title"))
@@ -49,11 +69,16 @@ struct ScoresView: View {
                 DatePicker("Date", selection: Bindable(night).date, displayedComponents: .date)
             }
             Section("Bowlers") {
-                ForEach(night.sortedEntries) { EntryRow(entry: $0) }
-                    .onDelete { offsets in
-                        let entries = night.sortedEntries
-                        for index in offsets { context.delete(entries[index]) }
-                    }
+                ForEach(night.sortedEntries) { entry in
+                    let isFocus = focus != nil && entry.bowler == focus
+                    EntryRow(entry: entry)
+                        .id(entry.persistentModelID)
+                        .listRowBackground(isFocus ? Theme.accent.opacity(0.18) : nil)
+                }
+                .onDelete { offsets in
+                    let entries = night.sortedEntries
+                    for index in offsets { context.delete(entries[index]) }
+                }
             }
         }
         .scrollDismissesKeyboard(.interactively)
@@ -100,14 +125,41 @@ struct EntryRow: View {
 
     private func gameField(_ title: String, _ value: Binding<Int?>) -> some View {
         let isBig = (value.wrappedValue ?? 0) >= 200
-        return TextField(title, value: value, format: .number)
-            .keyboardType(.numberPad)
+        return GameScoreField(title: title, score: value)
             .multilineTextAlignment(.center)
             .font(.headline.monospacedDigit())
             .foregroundStyle(isBig ? Theme.strike : Color.primary)
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity)
             .glassEffect(isBig ? .regular.tint(Theme.strike.opacity(0.25)) : .regular, in: .capsule)
+    }
+}
+
+/// A game score box that only takes 0–300: a keystroke that would go past
+/// a perfect game is refused on the spot.
+struct GameScoreField: View {
+    let title: String
+    @Binding var score: Int?
+    @State private var text = ""
+
+    var body: some View {
+        TextField(title, text: $text)
+            .keyboardType(.numberPad)
+            .onAppear { text = score.map(String.init) ?? "" }
+            .onChange(of: text) { old, new in
+                let digits = String(new.filter(\.isWholeNumber).prefix(3))
+                if let value = Int(digits), value > GameSheet.perfectGame {
+                    text = old
+                } else if digits != new {
+                    text = digits
+                } else {
+                    score = Int(digits)
+                }
+            }
+            // Keep up with scores set elsewhere, like a finished in-game sheet.
+            .onChange(of: score) { _, new in
+                if new != Int(text) { text = new.map(String.init) ?? "" }
+            }
     }
 }
 
@@ -124,6 +176,8 @@ struct AddBowlersToNightView: View {
     }
 
     var body: some View {
+        // Worked out once per redraw; every tap on a row redraws the list.
+        let available = self.available
         NavigationStack {
             List(available, selection: $selected) { bowler in
                 HStack {

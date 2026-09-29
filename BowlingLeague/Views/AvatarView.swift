@@ -9,7 +9,7 @@ struct AvatarView: View {
 
     var body: some View {
         Group {
-            if let data = bowler.photoData, let image = UIImage(data: data) {
+            if let data = bowler.photoData, let image = PhotoCache.image(for: data) {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFill()
@@ -35,6 +35,34 @@ struct AvatarView: View {
         let palette: [Color] = [.blue, .purple, .pink, .orange, .teal, .indigo, .green, .red, .mint, .cyan]
         let hash = bowler.name.unicodeScalars.reduce(0) { ($0 &* 31 &+ Int($1.value)) & 0x7fffffff }
         return palette[hash % palette.count]
+    }
+}
+
+/// Decoded bowler photos, keyed by their bytes. Lists redraw rows often, and
+/// decoding every photo each time made scrolling and selecting stutter. A new
+/// photo has different bytes, so it's simply a new entry.
+enum PhotoCache {
+    private final class Box {
+        let image: UIImage?
+        init(_ image: UIImage?) { self.image = image }
+    }
+
+    private static let cache: NSCache<NSNumber, Box> = {
+        let cache = NSCache<NSNumber, Box>()
+        cache.countLimit = 120
+        return cache
+    }()
+
+    static func image(for data: Data) -> UIImage? {
+        // Hash every byte: Data's own hash only looks at the first 80, and
+        // JPEG headers all look alike.
+        var hasher = Hasher()
+        data.withUnsafeBytes { hasher.combine(bytes: $0) }
+        let key = NSNumber(value: hasher.finalize())
+        if let hit = cache.object(forKey: key) { return hit.image }
+        let image = UIImage(data: data)?.preparingForDisplay()
+        cache.setObject(Box(image), forKey: key)
+        return image
     }
 }
 
