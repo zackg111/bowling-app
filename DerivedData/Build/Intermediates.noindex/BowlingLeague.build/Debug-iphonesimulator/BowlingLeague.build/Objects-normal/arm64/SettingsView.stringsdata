@@ -1,0 +1,72 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Base: %lld",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 11
+        }
+      },
+      {
+        "comment": "",
+        "key": "Percent: %lld%%",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 12
+        }
+      },
+      {
+        "comment": "",
+        "key": "Handicap",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%% of (%lld − average) per game. A 190 average gets %lld a game, %lld a series.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pay 4 places from %lld bowlers",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Eliminator",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "Half the field, rounded up to an even number, moves on after each game. Smaller nights pay 3 places.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 25
+        }
+      }
+    ]
+  },
+  "version": 1
+}

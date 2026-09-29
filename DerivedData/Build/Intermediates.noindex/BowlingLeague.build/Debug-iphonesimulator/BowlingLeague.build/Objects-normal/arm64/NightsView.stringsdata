@@ -1,0 +1,48 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/NightsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Nights",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ · %lld bowlers",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Night",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start a night to enter scores, pair doubles and run the eliminator.",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Nights Yet",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 31
+        }
+      }
+    ]
+  },
+  "version": 1
+}

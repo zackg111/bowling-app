@@ -1,0 +1,88 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/DoublesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Re-pair every team?",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Standings",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pairing",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pair Teams",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@  %lld",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Without a Partner",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Odd number of bowlers, or added after pairing.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Re-pair Teams",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 64
+        }
+      }
+    ]
+  },
+  "version": 1
+}

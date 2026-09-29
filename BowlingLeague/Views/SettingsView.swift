@@ -1,0 +1,31 @@
+import SwiftUI
+
+struct SettingsView: View {
+    @AppStorage("handicapBase") private var handicapBase = 230
+    @AppStorage("handicapPercent") private var handicapPercent = 80
+    @AppStorage("fourPlacesFrom") private var fourPlacesFrom = 20
+
+    var body: some View {
+        Form {
+            Section {
+                Stepper("Base: \(handicapBase)", value: $handicapBase, in: 150...300)
+                Stepper("Percent: \(handicapPercent)%", value: $handicapPercent, in: 0...100, step: 5)
+            } header: {
+                Text("Handicap")
+            } footer: {
+                let rule = HandicapRule(base: handicapBase, percent: handicapPercent)
+                Text("\(handicapPercent)% of (\(handicapBase) − average) per game. A 190 average gets \(rule.perGame(average: 190)) a game, \(rule.series(average: 190)) a series.")
+            }
+
+            Section {
+                Stepper("Pay 4 places from \(fourPlacesFrom) bowlers", value: $fourPlacesFrom, in: 4...60)
+            } header: {
+                Text("Eliminator")
+            } footer: {
+                Text("Half the field, rounded up to an even number, moves on after each game. Smaller nights pay 3 places.")
+            }
+        }
+        .laneBackground()
+        .navigationTitle("Settings")
+    }
+}

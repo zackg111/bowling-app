@@ -1,0 +1,112 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/IslandView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Tonight",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Castaways (%lld on the island)",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "High series wins immunity for next week. Low series goes swimming, and gets back on only by bowling the night's highest series.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Waiting on %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Immunity",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "Kicked off",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Back on the island",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "Out for the season",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recorded",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record Island Results",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "There's a tie. Recording applies it to everyone tied.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 87
+        }
+      }
+    ]
+  },
+  "version": 1
+}

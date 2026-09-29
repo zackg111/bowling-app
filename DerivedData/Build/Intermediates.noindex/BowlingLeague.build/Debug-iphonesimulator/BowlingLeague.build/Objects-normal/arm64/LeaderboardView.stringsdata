@@ -1,0 +1,88 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/LeaderboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Leaderboard",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter a night's games to fill this leaderboard.",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Scores Yet",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Bowlers Yet",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "Load the Saturday Night Special spreadsheet, or add bowlers on the Bowlers tab.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Load Saturday Night Special Spreadsheet",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 100
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,144 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/BowlerDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Bowler",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stats",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "History",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Average",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Handicap",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Use bowled average (%lld)",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Average",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nights",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Games",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Average",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "High game",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "High series",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "200+ games",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove from League",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Back to League",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 59
+        }
+      }
+    ]
+  },
+  "version": 1
+}

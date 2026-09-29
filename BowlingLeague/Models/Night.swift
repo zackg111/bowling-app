@@ -1,0 +1,24 @@
+import Foundation
+import SwiftData
+
+/// One night of bowling (e.g. a Saturday Night Special): who bowled,
+/// their three games, the doubles teams, the eliminator and the Island.
+@Model
+final class Night {
+    var title: String
+    var date: Date
+    /// Set once this night's Island result has been applied to the bowlers.
+    var islandRecorded = false
+
+    @Relationship(deleteRule: .cascade, inverse: \Entry.night)
+    var entries: [Entry] = []
+
+    init(title: String = "Saturday Night Special", date: Date = .now) {
+        self.title = title
+        self.date = date
+    }
+
+    var sortedEntries: [Entry] {
+        entries.sorted { ($0.bowler?.name ?? "") < ($1.bowler?.name ?? "") }
+    }
+}
