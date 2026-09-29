@@ -12,8 +12,10 @@ struct BowlingLeagueApp: App {
             fatalError("Couldn't open the league database: \(error)")
         }
 
-        // Shots from the Apple Watch are saved as they arrive, no tap needed.
         let context = container.mainContext
+        SeedData.loadOnFirstLaunch(into: context)
+
+        // Shots from the Apple Watch are saved as they arrive, no tap needed.
         ShotLink.shared.onReceive = { Shot.receive($0, in: context) }
         ShotLink.shared.activate()
 

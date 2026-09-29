@@ -63,6 +63,18 @@ enum SeedData {
         .init(name: "Isaac Potter", average: 201, games: [nil, nil, nil], eliminator: false, island: false),
     ]
 
+    /// Loads the spreadsheet the first time the app opens on an empty league.
+    /// Only once, so a league someone clears on purpose stays empty.
+    @MainActor
+    static func loadOnFirstLaunch(into context: ModelContext) {
+        let key = "didLoadSpreadsheet"
+        guard !UserDefaults.standard.bool(forKey: key) else { return }
+        UserDefaults.standard.set(true, forKey: key)
+        guard (try? context.fetchCount(FetchDescriptor<Bowler>())) == 0 else { return }
+        loadSpreadsheet(into: context)
+        try? context.save()
+    }
+
     /// Adds every bowler with their average, plus one night holding the
     /// games entered so far, eliminator entrants and Island castaways.
     @MainActor

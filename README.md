@@ -3,9 +3,9 @@
 Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
 
 ## What it does
-- **Home**: leaderboard for active bowlers by Average, High Game, High Series
+- **Home** (first tab, where the app opens): leaderboard for active bowlers by Average, High Game, High Series
   or 200 Games, with a Liquid Glass podium for the top three.
-- **Bowlers** (first tab): every bowler with average and handicap at a glance,
+- **Bowlers**: every bowler with average and handicap at a glance,
   sorted by average. iPad shows a sortable table (average, handicap, games,
   high game, high series); iPhone shows a compact list. Tap for stats from every night bowled
   (games, average, high game, high series, 200+ games, history).
@@ -22,8 +22,9 @@ Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
   to the nearest even number, moves on after games 1 and 2 (25 → 14 → 8).
   Game 3's top 3 cash with 14 to 19 entrants, top 4 with 20 to 25 (cutoff in Settings).
   Ties at a cut all move on. Entry is a per-bowler toggle.
-- **Spreadsheet data**: the empty Home and Bowlers screens offer to load the
-  Saturday Night Special spreadsheet (`Models/SeedData.swift`): all 42 bowlers
+- **Spreadsheet data**: loaded automatically the first time the app opens on
+  an empty league (and still offered on the empty Home and Bowlers screens) —
+  the Saturday Night Special spreadsheet (`Models/SeedData.swift`): all 42 bowlers
   and averages, plus a Sep 26 night with the 29 bowlers on the sheet, the games
   entered so far, the 27 eliminator entrants and the 13 Island castaways.
 - **Island**: the season-long survivor game from the sheet's Island tab.
