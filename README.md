@@ -18,6 +18,9 @@ Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
   Forever" erases them and their scores.
 - **Nights**: pick who's bowling, enter games 1–3. Each row shows average,
   series handicap and Total With Handicap, like the sheet.
+- **Locations**: each night has a location (the bowling alley or an address)
+  shown under its date and in the Nights list, with a button to open it in
+  Maps. A new night starts with the last night's location.
 - **In-game mode** (bowling-figure button on a night): score ball by ball as
   the night is bowled. Tap the pins that fell on the pin deck, or tap a quick
   count (-, 1–9, X, /). The 10-frame sheet fills in with marks and running

@@ -7,6 +7,8 @@ import SwiftData
 final class Night {
     var title: String
     var date: Date
+    /// Where it was bowled, e.g. the bowling alley. Empty when not set.
+    var location = ""
     /// Set once this night's Island result has been applied to the bowlers.
     var islandRecorded = false
 
@@ -16,6 +18,13 @@ final class Night {
     init(title: String = "Saturday Night Special", date: Date = .now) {
         self.title = title
         self.date = date
+    }
+
+    /// Opens the location in Apple Maps.
+    var mapsURL: URL? {
+        let query = location.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !query.isEmpty, let encoded = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return nil }
+        return URL(string: "https://maps.apple.com/?q=\(encoded)")
     }
 
     var sortedEntries: [Entry] {

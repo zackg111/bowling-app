@@ -31,7 +31,7 @@ struct NightDetailView: View {
         }
         // Tap the title to rename the night.
         .navigationTitle($night.title)
-        .navigationSubtitle(Text(night.date, format: .dateTime.weekday(.wide).month().day().year()))
+        .navigationSubtitle(subtitle)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button("In-Game Mode", systemImage: "figure.bowling") { inGame = true }
@@ -40,6 +40,12 @@ struct NightDetailView: View {
         }
         .sheet(isPresented: $showingAddBowlers) { AddBowlersToNightView(night: night) }
         .fullScreenCover(isPresented: $inGame) { InGameView(night: night) }
+    }
+
+    /// The date, and where it's bowled when that's set.
+    private var subtitle: String {
+        let date = night.date.formatted(.dateTime.weekday(.wide).month().day().year())
+        return night.location.isEmpty ? date : "\(date) · \(night.location)"
     }
 }
 
@@ -66,6 +72,22 @@ struct ScoresView: View {
                 TextField("Title", text: Bindable(night).title, prompt: Text("Night title"))
                     .font(.headline)
                     .submitLabel(.done)
+                HStack {
+                    Label {
+                        TextField("Location", text: Bindable(night).location, prompt: Text("Bowling alley or address"))
+                            .textContentType(.location)
+                            .submitLabel(.done)
+                    } icon: {
+                        Image(systemName: "mappin.and.ellipse").foregroundStyle(Theme.accent)
+                    }
+                    if let url = night.mapsURL {
+                        Link(destination: url) {
+                            Image(systemName: "map")
+                        }
+                        .buttonStyle(.borderless)
+                        .accessibilityLabel("Open in Maps")
+                    }
+                }
                 DatePicker("Date", selection: Bindable(night).date, displayedComponents: .date)
             }
             Section("Bowlers") {

@@ -26,6 +26,12 @@ struct NightsView: View {
                             Text("\(night.entries.count) bowlers")
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
+                            if !night.location.isEmpty {
+                                Label(night.location, systemImage: "mappin.and.ellipse")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(1)
+                            }
                         }
                     }
                     .padding(.vertical, 4)
@@ -39,7 +45,12 @@ struct NightsView: View {
         .navigationTitle("Nights")
         .navigationDestination(for: Night.self) { NightDetailView(night: $0) }
         .toolbar {
-            Button("New Night", systemImage: "plus") { context.insert(Night()) }
+            Button("New Night", systemImage: "plus") {
+                // Leagues usually bowl at the same place, so carry the last location over.
+                let night = Night()
+                night.location = nights.first?.location ?? ""
+                context.insert(night)
+            }
         }
         .overlay {
             if nights.isEmpty {
