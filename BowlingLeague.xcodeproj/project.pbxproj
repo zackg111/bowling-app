@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B00000000000000000003000 /* Build configuration list for PBXProject "BowlingLeague" */;
+			buildConfigurationList = B00000000000000000003000 /* Build configuration list for PBXProject "The 10 Pin League" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -587,7 +587,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B00000000000000000003000 /* Build configuration list for PBXProject "BowlingLeague" */ = {
+		B00000000000000000003000 /* Build configuration list for PBXProject "The 10 Pin League" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B00000000000000000004001 /* Debug */,
