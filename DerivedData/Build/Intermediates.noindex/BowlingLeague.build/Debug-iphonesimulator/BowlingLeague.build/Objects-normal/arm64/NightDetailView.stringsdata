@@ -38,24 +38,8 @@
         "comment": "",
         "key": "Avg %lld · Hcp %lld",
         "location": {
-          "startingColumn": 22,
-          "startingLine": 68
-        }
-      },
-      {
-        "comment": "",
-        "key": "%lld",
-        "location": {
-          "startingColumn": 22,
-          "startingLine": 77
-        }
-      },
-      {
-        "comment": "",
-        "key": "Who's Bowling?",
-        "location": {
-          "startingColumn": 30,
-          "startingLine": 116
+          "startingColumn": 26,
+          "startingLine": 72
         }
       },
       {
@@ -63,7 +47,31 @@
         "key": "%lld",
         "location": {
           "startingColumn": 26,
-          "startingLine": 111
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "with hcp",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Who's Bowling?",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 129
         }
       },
       {
@@ -71,7 +79,7 @@
         "key": "Cancel",
         "location": {
           "startingColumn": 70,
-          "startingLine": 118
+          "startingLine": 136
         }
       },
       {
@@ -79,7 +87,7 @@
         "key": "Add %lld",
         "location": {
           "startingColumn": 28,
-          "startingLine": 120
+          "startingLine": 138
         }
       }
     ]

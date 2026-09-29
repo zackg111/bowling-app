@@ -1,0 +1,100 @@
+== Known SDKs ==
+    appletvos27.0
+    iphoneos27.0
+    watchos27.0
+    xros27.0
+
+
+== Preferred Build Map ==
+iphoneos15.4:
+    19E239  -->  19E240
+appletvos16.0:
+    20J5328e  -->  20J5328e
+    20J5355f  -->  20J5355f
+    20J5319f  -->  20J5319f
+    20J5344e  -->  20J5344e
+    20J5299n  -->  20J5299n
+    20J373  -->  20J373
+iphoneos16.4:
+    20E5212f  -->  20E5212f
+iphoneos15.5:
+    19F64  -->  19F70
+watchos9.0:
+    20R5316e  -->  20R5316e
+    20R5287p  -->  20R5287p
+    20R5307f  -->  20R5307f
+    20R5332f  -->  20R5332f
+    20R5343e  -->  20R5343e
+    20R362  -->  20R362
+appletvos16.1:
+    20K67  -->  20K67
+    20K5041d  -->  20K5041d
+    20K5052c  -->  20K5052c
+watchos9.4:
+    20T5222f  -->  20T5222f
+iphoneos16.0:
+    20A5283m  -->  20A5283p
+    20A360  -->  20A360
+    20A5312e  -->  20A5312e
+    20A5339d  -->  20A5339d
+    20A5303f  -->  20A5303f
+    20A5328h  -->  20A5328h
+iphoneos16.1:
+    20B71  -->  20B72
+    20B5056e  -->  20B5056e
+    20B5045d  -->  20B5045d
+watchos9.1:
+    20S71  -->  20S75
+    20S5044e  -->  20S5044e
+    20S5055d  -->  20S5055e
+iphoneos16.2:
+    20C52  -->  20C52
+appletvos16.4:
+    20L5463g  -->  20L5463g
+
+
+== User Overrides ==
+(None)
+
+
+== Evaluation Results ==
+appletvos27.0:
+    SDK Version: 27.0
+    SDK Build: 24J360
+    SDK Directory: /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS27.0.sdk
+    Platform: com.apple.platform.appletvos
+    Chosen Runtime: tvOS 27.0 (27.0 - 24J360) - com.apple.CoreSimulator.SimRuntime.tvOS-27-0
+        User Override: (null)
+        Preferred: (null)
+        Default: tvOS 27.0 (27.0 - 24J360) - com.apple.CoreSimulator.SimRuntime.tvOS-27-0
+
+iphoneos27.0:
+    SDK Version: 27.0
+    SDK Build: 24A430
+    SDK Directory: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk
+    Platform: com.apple.platform.iphoneos
+    Chosen Runtime: iOS 27.0 (27.0 - 24A434) - com.apple.CoreSimulator.SimRuntime.iOS-27-0
+        User Override: (null)
+        Preferred: (null)
+        Default: 24A430
+
+watchos27.0:
+    SDK Version: 27.0
+    SDK Build: 24R360
+    SDK Directory: /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS27.0.sdk
+    Platform: com.apple.platform.watchos
+    Chosen Runtime: 24R360
+        User Override: (null)
+        Preferred: (null)
+        Default: 24R360
+
+xros27.0:
+    SDK Version: 27.0
+    SDK Build: 24M361
+    SDK Directory: /Applications/Xcode.app/Contents/Developer/Platforms/XROS.platform/Developer/SDKs/XROS.sdk
+    Platform: com.apple.platform.xros
+    Chosen Runtime: 24M361
+        User Override: (null)
+        Preferred: (null)
+        Default: 24M361
+

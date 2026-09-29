@@ -3,7 +3,7 @@ import Foundation
 /// Handicap per game = 80% of (230 − average), rounded down, never negative.
 /// Matches every row of the Saturday Night Special sheet
 /// (e.g. average 223 → 5 a game, 15 a series; average 240 → 0).
-struct HandicapRule: Equatable {
+nonisolated struct HandicapRule: Equatable, Sendable {
     var base: Int = 230
     var percent: Int = 80
 

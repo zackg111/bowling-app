@@ -12,6 +12,8 @@ final class Bowler {
     @Attribute(.externalStorage) var photoData: Data?
     /// False once the bowler has left the league. Their history and stats stay.
     var isActive = true
+    /// The person using this phone ("This is me"). At most one bowler.
+    var isPrimary = false
 
     /// Island (the season-long survivor game).
     var onIsland = false
@@ -26,6 +28,10 @@ final class Bowler {
 
     @Relationship(deleteRule: .cascade, inverse: \Entry.bowler)
     var entries: [Entry] = []
+
+    /// Deliveries measured by this bowler's Apple Watch.
+    @Relationship(deleteRule: .cascade, inverse: \Shot.bowler)
+    var shots: [Shot] = []
 
     init(name: String, average: Int) {
         self.name = name

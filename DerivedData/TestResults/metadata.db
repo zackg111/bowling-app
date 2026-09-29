@@ -13,12 +13,12 @@
 				<key>highLowPairsTopWithBottom</key>
 				<dict>
 					<key>mrnet</key>
-					<real>7.3194503784179688e-05</real>
+					<real>0.010561943054199219</real>
 				</dict>
 				<key>oddCountLeavesOneOut</key>
 				<dict>
 					<key>mrnet</key>
-					<real>6.1750411987304688e-05</real>
+					<real>0.0001049041748046875</real>
 				</dict>
 			</dict>
 			<key>EliminatorTests</key>
@@ -26,22 +26,22 @@
 				<key>cutsEachGameThenPaysTopThree</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0043079853057861328</real>
+					<real>0.0011379718780517578</real>
 				</dict>
 				<key>payingPlacesDependOnField</key>
 				<dict>
 					<key>mrnet</key>
-					<real>3.6954879760742188e-05</real>
+					<real>4.5061111450195312e-05</real>
 				</dict>
 				<key>stopsWhileScoresAreMissing</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0044178962707519531</real>
+					<real>0.00013017654418945312</real>
 				</dict>
 				<key>tiesAtTheCutAllAdvance</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0012600421905517578</real>
+					<real>0.00047397613525390625</real>
 				</dict>
 			</dict>
 			<key>HandicapTests</key>
@@ -49,7 +49,7 @@
 				<key>willsTotalWithHandicap</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.00098395347595214844</real>
+					<real>7.0095062255859375e-05</real>
 				</dict>
 			</dict>
 			<key>IslandTests</key>
@@ -57,27 +57,27 @@
 				<key>highWinsImmunityLowIsKickedOff</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.00013613700866699219</real>
+					<real>0.00014781951904296875</real>
 				</dict>
 				<key>lastWeeksImmunityIsSafe</key>
 				<dict>
 					<key>mrnet</key>
-					<real>8.296966552734375e-05</real>
+					<real>0.00011610984802246094</real>
 				</dict>
 				<key>swimmerBowlsHighestAndGetsBackOn</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.000125885009765625</real>
+					<real>0.00021076202392578125</real>
 				</dict>
 				<key>swimmerOutUnlessHighest</key>
 				<dict>
 					<key>mrnet</key>
-					<real>8.106231689453125e-05</real>
+					<real>0.00023889541625976562</real>
 				</dict>
 				<key>waitsForEveryScore</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.00010609626770019531</real>
+					<real>0.0001506805419921875</real>
 				</dict>
 			</dict>
 			<key>StatsTests</key>
@@ -85,7 +85,40 @@
 				<key>statsAcrossNights</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.000659942626953125</real>
+					<real>0.00017523765563964844</real>
+				</dict>
+			</dict>
+			<key>SwingAnalysisTests</key>
+			<dict>
+				<key>motionStatsSummarizesShots</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.014153242111206055</real>
+				</dict>
+				<key>peaksCloserThanGapCountOnceKeepingHigher</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.00068807601928710938</real>
+				</dict>
+				<key>peaksFarApartAreSeparateShots</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.0010597705841064453</real>
+				</dict>
+				<key>singlePeakGivesReleaseSpeed</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.00097703933715820312</real>
+				</dict>
+				<key>slowSwingIsNotAShot</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.00039625167846679688</real>
+				</dict>
+				<key>wristRPMFromYRotation</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.00091624259948730469</real>
 				</dict>
 			</dict>
 		</dict>

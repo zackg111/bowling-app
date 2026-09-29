@@ -7,7 +7,7 @@
         "key": "Re-pair every team?",
         "location": {
           "startingColumn": 29,
-          "startingLine": 63
+          "startingLine": 64
         }
       },
       {
@@ -79,7 +79,7 @@
         "key": "Re-pair Teams",
         "location": {
           "startingColumn": 20,
-          "startingLine": 64
+          "startingLine": 65
         }
       }
     ]

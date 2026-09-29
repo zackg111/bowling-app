@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B00000000000000000000801 /* BowlingWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B00000000000000000000104 /* BowlingWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B0000000000000000000A001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -14,12 +18,36 @@
 			remoteGlobalIDString = B00000000000000000001000;
 			remoteInfo = BowlingLeague;
 		};
+		B0000000000000000000A002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0000000000000000000000A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00000000000000000005000;
+			remoteInfo = BowlingWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B00000000000000000000901 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B00000000000000000000801 /* BowlingWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B00000000000000000000101 /* BowlingLeague.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowlingLeague.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00000000000000000000102 /* BowlingLeagueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingLeagueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00000000000000000000103 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B00000000000000000000104 /* BowlingWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BowlingWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00000000000000000000105 /* BowlingWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BowlingWatch-Info.plist"; sourceTree = "<group>"; };
+		B00000000000000000000106 /* BowlingWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BowlingWatch.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +59,16 @@
 		B00000000000000000000202 /* BowlingLeagueTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BowlingLeagueTests;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000203 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000204 /* BowlingWatch */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BowlingWatch;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -50,6 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00000000000000000000303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,7 +103,11 @@
 			children = (
 				B00000000000000000000103 /* README.md */,
 				B00000000000000000000201 /* BowlingLeague */,
+				B00000000000000000000203 /* Shared */,
 				B00000000000000000000202 /* BowlingLeagueTests */,
+				B00000000000000000000204 /* BowlingWatch */,
+				B00000000000000000000105 /* BowlingWatch-Info.plist */,
+				B00000000000000000000106 /* BowlingWatch.entitlements */,
 				B00000000000000000000402 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +117,7 @@
 			children = (
 				B00000000000000000000101 /* BowlingLeague.app */,
 				B00000000000000000000102 /* BowlingLeagueTests.xctest */,
+				B00000000000000000000104 /* BowlingWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,13 +132,16 @@
 				B00000000000000000000501 /* Sources */,
 				B00000000000000000000301 /* Frameworks */,
 				B00000000000000000000601 /* Resources */,
+				B00000000000000000000901 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B00000000000000000000702 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				B00000000000000000000201 /* BowlingLeague */,
+				B00000000000000000000203 /* Shared */,
 			);
 			name = BowlingLeague;
 			productName = BowlingLeague;
@@ -116,6 +169,27 @@
 			productReference = B00000000000000000000102 /* BowlingLeagueTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B00000000000000000005000 /* BowlingWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00000000000000000003003 /* Build configuration list for PBXNativeTarget "BowlingWatch" */;
+			buildPhases = (
+				B00000000000000000000503 /* Sources */,
+				B00000000000000000000303 /* Frameworks */,
+				B00000000000000000000603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B00000000000000000000203 /* Shared */,
+				B00000000000000000000204 /* BowlingWatch */,
+			);
+			name = BowlingWatch;
+			productName = BowlingWatch;
+			productReference = B00000000000000000000104 /* BowlingWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -132,6 +206,9 @@
 					B00000000000000000002000 = {
 						CreatedOnToolsVersion = 26.0;
 						TestTargetID = B00000000000000000001000;
+					};
+					B00000000000000000005000 = {
+						CreatedOnToolsVersion = 26.0;
 					};
 				};
 			};
@@ -151,6 +228,7 @@
 			targets = (
 				B00000000000000000001000 /* BowlingLeague */,
 				B00000000000000000002000 /* BowlingLeagueTests */,
+				B00000000000000000005000 /* BowlingWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +242,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B00000000000000000000602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00000000000000000000603 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,6 +272,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B00000000000000000000503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -194,6 +286,11 @@
 			isa = PBXTargetDependency;
 			target = B00000000000000000001000 /* BowlingLeague */;
 			targetProxy = B0000000000000000000A001 /* PBXContainerItemProxy */;
+		};
+		B00000000000000000000702 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B00000000000000000005000 /* BowlingWatch */;
+			targetProxy = B0000000000000000000A002 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -306,6 +403,7 @@
 		B00000000000000000004011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -336,6 +434,7 @@
 		B00000000000000000004012 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -403,6 +502,80 @@
 			};
 			name = Release;
 		};
+		B00000000000000000004031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BowlingWatch.entitlements;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BowlingWatch-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bowling League";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Records your bowling sessions as workouts so the watch can keep measuring your swing.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Saves your bowling sessions as workouts in Health.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Measures your arm swing to estimate ball release speed and wrist rotation.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.BowlingLeague;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BowlingLeague.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		B00000000000000000004032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BowlingWatch.entitlements;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BowlingWatch-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bowling League";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Records your bowling sessions as workouts so the watch can keep measuring your swing.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Saves your bowling sessions as workouts in Health.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Measures your arm swing to estimate ball release speed and wrist rotation.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.BowlingLeague;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BowlingLeague.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -429,6 +602,15 @@
 			buildConfigurations = (
 				B00000000000000000004021 /* Debug */,
 				B00000000000000000004022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00000000000000000003003 /* Build configuration list for PBXNativeTarget "BowlingWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00000000000000000004031 /* Debug */,
+				B00000000000000000004032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

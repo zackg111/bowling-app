@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct EliminatorView: View {
     let night: Night

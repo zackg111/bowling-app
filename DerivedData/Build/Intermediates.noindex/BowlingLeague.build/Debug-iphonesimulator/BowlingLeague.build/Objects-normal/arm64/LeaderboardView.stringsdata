@@ -7,7 +7,15 @@
         "key": "Leaderboard",
         "location": {
           "startingColumn": 26,
-          "startingLine": 65
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mark yourself with This is me to keep your watch shots",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 36
         }
       },
       {
@@ -15,7 +23,7 @@
         "key": "Category",
         "location": {
           "startingColumn": 24,
-          "startingLine": 33
+          "startingLine": 57
         }
       },
       {
@@ -23,7 +31,7 @@
         "key": "%lld",
         "location": {
           "startingColumn": 38,
-          "startingLine": 51
+          "startingLine": 89
         }
       },
       {
@@ -31,7 +39,7 @@
         "key": "%lld",
         "location": {
           "startingColumn": 38,
-          "startingLine": 58
+          "startingLine": 96
         }
       },
       {
@@ -39,7 +47,7 @@
         "key": "Enter a night's games to fill this leaderboard.",
         "location": {
           "startingColumn": 58,
-          "startingLine": 79
+          "startingLine": 118
         }
       },
       {
@@ -47,7 +55,7 @@
         "key": "No Scores Yet",
         "location": {
           "startingColumn": 40,
-          "startingLine": 78
+          "startingLine": 117
         }
       },
       {
@@ -55,7 +63,7 @@
         "key": "No Bowlers Yet",
         "location": {
           "startingColumn": 27,
-          "startingLine": 70
+          "startingLine": 109
         }
       },
       {
@@ -63,7 +71,7 @@
         "key": "Load the Saturday Night Special spreadsheet, or add bowlers on the Bowlers tab.",
         "location": {
           "startingColumn": 26,
-          "startingLine": 72
+          "startingLine": 111
         }
       },
       {
@@ -71,7 +79,47 @@
         "key": "Load Saturday Night Special Spreadsheet",
         "location": {
           "startingColumn": 28,
-          "startingLine": 74
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "You",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 135
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "average",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "top %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ mph",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 153
         }
       },
       {
@@ -79,7 +127,7 @@
         "key": "%lld",
         "location": {
           "startingColumn": 30,
-          "startingLine": 100
+          "startingLine": 187
         }
       }
     ]

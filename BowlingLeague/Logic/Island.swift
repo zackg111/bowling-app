@@ -8,7 +8,7 @@ import Foundation
 /// - A swimmer gets back on by bowling the highest series of the night
 ///   (ties count); otherwise they're off for the season. When that happens,
 ///   immunity still goes to the highest castaway, the next highest bowler.
-struct IslandNight<ID: Hashable> {
+nonisolated struct IslandNight<ID: Hashable> {
     let standings: [Ranked<ID>]
     /// Castaways or swimmers with a game still missing tonight.
     let waitingOn: [ID]
@@ -20,7 +20,7 @@ struct IslandNight<ID: Hashable> {
     var isComplete: Bool { waitingOn.isEmpty && !standings.isEmpty }
 }
 
-enum Island {
+nonisolated enum Island {
     static func night<ID: Hashable>(
         castaways: [ID],
         swimmers: [ID] = [],

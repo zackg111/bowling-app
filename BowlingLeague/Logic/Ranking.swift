@@ -1,13 +1,13 @@
 import Foundation
 
-struct Ranked<Item> {
+nonisolated struct Ranked<Item> {
     let item: Item
     let score: Int
     /// 1-based place; ties share a place (1, 2, 2, 4).
     let place: Int
 }
 
-enum Ranking {
+nonisolated enum Ranking {
     static func rank<Item>(_ items: [Item], score: (Item) -> Int) -> [Ranked<Item>] {
         let sorted = items.map { ($0, score($0)) }.sorted { $0.1 > $1.1 }
         var result: [Ranked<Item>] = []

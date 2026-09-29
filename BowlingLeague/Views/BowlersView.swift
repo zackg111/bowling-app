@@ -90,6 +90,7 @@ struct BowlersView: View {
             Section {
                 ForEach(listed) { bowler in
                     Button { opened = bowler } label: { row(bowler) }
+                        .tint(.primary)
                         .swipeActions {
                             Button("Remove", systemImage: "person.fill.xmark") { bowler.isActive = false }
                                 .tint(.orange)
@@ -197,8 +198,9 @@ struct AddBowlerView: View {
         NavigationStack {
             Form {
                 Section {
+                    let title = photoData == nil ? "Add Photo" : "Change Photo"
                     PhotosPicker(selection: $photoItem, matching: .images) {
-                        Label(photoData == nil ? "Add Photo" : "Change Photo", systemImage: "person.crop.circle.badge.plus")
+                        Label(title, systemImage: "person.crop.circle.badge.plus")
                     }
                 }
                 Section {

@@ -346,6 +346,9 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
+@import WatchConnectivity;
 #endif
 
 #endif // defined(__OBJC__)
@@ -368,6 +371,20 @@ extern "C" {
 #endif
 
 #if defined(__OBJC__)
+
+@class WCSession;
+@class NSString;
+/// Carries measured shots from the watch to the phone. Uses
+/// <code>transferUserInfo</code>, which queues and delivers even if the phone app isn’t
+/// open right now.
+SWIFT_CLASS("_TtC13BowlingLeague8ShotLink")
+@interface ShotLink : NSObject <WCSessionDelegate>
+- (void)session:(WCSession * _Nonnull)session didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
+- (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
+- (void)sessionDidBecomeInactive:(WCSession * _Nonnull)session;
+- (void)sessionDidDeactivate:(WCSession * _Nonnull)session;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #endif // defined(__OBJC__)
 #if __has_attribute(external_source_symbol)

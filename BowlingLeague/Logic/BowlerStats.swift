@@ -1,6 +1,6 @@
 import Foundation
 
-struct BowlerStats: Equatable {
+nonisolated struct BowlerStats: Equatable {
     var nightsBowled = 0
     var gamesBowled = 0
     var totalPins = 0

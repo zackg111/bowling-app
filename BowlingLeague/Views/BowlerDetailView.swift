@@ -1,8 +1,11 @@
 import SwiftUI
+import SwiftData
+import Charts
 
 struct BowlerDetailView: View {
     @Bindable var bowler: Bowler
     @Environment(\.handicapRule) private var rule
+    @Environment(\.modelContext) private var context
 
     private var history: [Entry] {
         bowler.entries.sorted { ($0.night?.date ?? .distantPast) > ($1.night?.date ?? .distantPast) }
@@ -19,6 +22,10 @@ struct BowlerDetailView: View {
 
             Section("Bowler") {
                 TextField("Name", text: $bowler.name)
+                Toggle("This is me", systemImage: "person.crop.circle.badge.checkmark", isOn: Binding(
+                    get: { bowler.isPrimary },
+                    set: { $0 ? bowler.makePrimary(in: context) : (bowler.isPrimary = false) }
+                ))
                 LabeledContent("Average") {
                     TextField("Average", value: $bowler.average, format: .number)
                         .keyboardType(.numberPad)
@@ -43,6 +50,10 @@ struct BowlerDetailView: View {
                 .listRowInsets(EdgeInsets())
             }
 
+            if !bowler.shots.isEmpty || bowler.isPrimary {
+                MotionSection(bowler: bowler)
+            }
+
             Section("History") {
                 ForEach(history) { entry in
                     HStack {
@@ -65,6 +76,47 @@ struct BowlerDetailView: View {
                    systemImage: bowler.isActive ? "person.fill.xmark" : "person.fill.checkmark") {
                 bowler.isActive.toggle()
             }
+        }
+    }
+}
+
+/// Release speed and wrist rotation measured by the bowler's Apple Watch.
+private struct MotionSection: View {
+    let bowler: Bowler
+
+    var body: some View {
+        let motion = bowler.motionStats
+        let recent = Array(bowler.shots.sorted { $0.date < $1.date }.suffix(50).enumerated())
+        Section {
+            if motion.shots == 0 {
+                Text("Open Bowling League on your Apple Watch while you bowl. Each shot is saved here automatically.")
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+            } else {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 100), spacing: 12)], spacing: 12) {
+                    StatTile(title: "Shots", value: "\(motion.shots)", systemImage: "applewatch")
+                    StatTile(title: "Avg speed mph", value: MotionStats.mph(motion.averageSpeedMPH), systemImage: "speedometer", tint: Theme.secondAccent)
+                    StatTile(title: "Top speed mph", value: MotionStats.mph(motion.topSpeedMPH), systemImage: "bolt.fill", tint: Theme.strike)
+                    StatTile(title: "Avg wrist rpm", value: MotionStats.rpm(motion.averageWristRPM), systemImage: "arrow.trianglehead.2.clockwise.rotate.90")
+                }
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets())
+
+                Chart(recent, id: \.offset) { index, shot in
+                    LineMark(x: .value("Shot", index + 1), y: .value("mph", shot.releaseSpeedMPH))
+                        .interpolationMethod(.catmullRom)
+                    PointMark(x: .value("Shot", index + 1), y: .value("mph", shot.releaseSpeedMPH))
+                        .symbolSize(20)
+                }
+                .foregroundStyle(Theme.accent)
+                .chartYScale(domain: .automatic(includesZero: false))
+                .chartXAxisLabel("Last \(recent.count) shots")
+                .chartYAxisLabel("mph")
+                .frame(height: 160)
+                .padding(.vertical, 8)
+            }
+        } header: {
+            Text("Motion")
         }
     }
 }

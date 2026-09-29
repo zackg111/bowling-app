@@ -1,0 +1,60 @@
+== Disk Images ==
+-- iOS --
+iOS 27.0 (24A5380i) - F0A42A61-200F-441D-A118-E00C3AE431C7
+    State: Ready
+    Image Kind: Patchable Cryptex Disk Image
+    Signature State: Unknown
+    Deletable: YES
+    Last Used At: 2026-09-29 16:09:48 +0000
+    Mounting Mode: Cryptex
+    Mount Policy: Automatic
+    Mount Path: /Library/Developer/CoreSimulator/Volumes/iOS_24A5380i
+    Image Path: /System/Library/AssetsV2/com_apple_MobileAsset_iOSSimulatorRuntime/9b2276ae1797abe73de2ace84a91d35aa9f61935.asset/AssetData
+    Size: 7.5G
+    Bundle Path: /Library/Developer/CoreSimulator/Volumes/iOS_24A5380i/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime
+    Supported Architectures: arm64
+    Parent Mount Path: /System/Library/AssetsV2/com_apple_MobileAsset_iOSSimulatorRuntime/9b2276ae1797abe73de2ace84a91d35aa9f61935.asset/AssetData
+iOS 27.0 (24A434) - 47B96CBA-CC6D-4ABD-BF6E-5A31DDE857D7
+    State: Ready
+    Image Kind: Patchable Cryptex Disk Image
+    Signature State: Unknown
+    Deletable: YES
+    Last Used At: 2026-09-29 19:13:27 +0000
+    Mounting Mode: Cryptex
+    Mount Policy: Automatic
+    Mount Path: /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.te3tNu
+    Image Path: /System/Library/AssetsV2/com_apple_MobileAsset_iOSSimulatorRuntime/3e800c38767f9f2c5fc86acdad7adf44565e051a.asset/AssetData
+    Size: 7.5G
+    Bundle Path: /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.te3tNu/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime
+    Supported Architectures: arm64
+    Parent Mount Path: /System/Library/AssetsV2/com_apple_MobileAsset_iOSSimulatorRuntime/3e800c38767f9f2c5fc86acdad7adf44565e051a.asset/AssetData
+-- tvOS --
+tvOS 27.0 (24J360) - 775980C5-7924-4B0C-BF65-1007EDBD1B3D
+    State: Ready
+    Image Kind: Patchable Cryptex Disk Image
+    Signature State: Unknown
+    Deletable: YES
+    Mounting Mode: Cryptex
+    Mount Policy: Automatic
+    Mount Path: /private/var/run/com.apple.security.cryptexd/mnt/com.apple.AppleTVOS.SimulatorRuntime-v24.10.360.0.sMYJyV
+    Image Path: /System/Library/AssetsV2/com_apple_MobileAsset_appleTVOSSimulatorRuntime/f6a3a9321156c52c0d245f50953d9867b2b139ab.asset/AssetData
+    Size: 3.4G
+    Bundle Path: /private/var/run/com.apple.security.cryptexd/mnt/com.apple.AppleTVOS.SimulatorRuntime-v24.10.360.0.sMYJyV/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 27.0.simruntime
+    Supported Architectures: arm64
+    Parent Mount Path: /System/Library/AssetsV2/com_apple_MobileAsset_appleTVOSSimulatorRuntime/f6a3a9321156c52c0d245f50953d9867b2b139ab.asset/AssetData
+tvOS 27.0 (24J5315h) - 19B033FC-03F0-4A4F-BF6A-D0375BBEE11F
+    State: Ready
+    Image Kind: Patchable Cryptex Disk Image
+    Signature State: Unknown
+    Deletable: YES
+    Last Used At: 2026-09-28 12:30:45 +0000
+    Mounting Mode: Cryptex
+    Mount Policy: Automatic
+    Mount Path: /Library/Developer/CoreSimulator/Volumes/tvOS_24J5315h
+    Image Path: /System/Library/AssetsV2/com_apple_MobileAsset_appleTVOSSimulatorRuntime/ae76b567043da7274d007301730d1d5ca7295710.asset/AssetData
+    Size: 3.5G
+    Bundle Path: /Library/Developer/CoreSimulator/Volumes/tvOS_24J5315h/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 27.0.simruntime
+    Supported Architectures: arm64
+    Parent Mount Path: /System/Library/AssetsV2/com_apple_MobileAsset_appleTVOSSimulatorRuntime/ae76b567043da7274d007301730d1d5ca7295710.asset/AssetData
+
+Total Disk Images: 4 (22.0G)

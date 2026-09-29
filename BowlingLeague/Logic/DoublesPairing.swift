@@ -1,6 +1,6 @@
 import Foundation
 
-enum PairingMethod: String, CaseIterable, Identifiable {
+nonisolated enum PairingMethod: String, CaseIterable, Identifiable {
     /// Random draw.
     case blindDraw
     /// Highest average with lowest average, second highest with second lowest, and so on.
@@ -16,7 +16,7 @@ enum PairingMethod: String, CaseIterable, Identifiable {
     }
 }
 
-enum DoublesPairing {
+nonisolated enum DoublesPairing {
     /// Pairs bowlers into two-person teams. With an odd count, one bowler
     /// is returned as `leftover` for the organizer to place.
     static func pair<Item>(

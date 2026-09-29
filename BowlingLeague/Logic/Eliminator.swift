@@ -1,7 +1,7 @@
 import Foundation
 
 /// How the eliminator cuts and pays.
-struct EliminatorRule: Equatable {
+nonisolated struct EliminatorRule: Equatable {
     var games = 3
     /// Nights with at least this many entrants pay 4 places; smaller nights pay 3.
     var fourPlacesFrom = 20
@@ -21,7 +21,7 @@ struct EliminatorRule: Equatable {
 /// Game-by-game eliminator on handicapped scores. Everyone entered bowls
 /// game 1; half the field (rounded up to even) moves on after each game
 /// but the last, and the last game's top 3 or 4 cash. Ties at a cut all move on.
-struct EliminatorRound<ID: Hashable> {
+nonisolated struct EliminatorRound<ID: Hashable> {
     let game: Int
     let isFinal: Bool
     let standings: [Ranked<ID>]
@@ -36,7 +36,7 @@ struct EliminatorRound<ID: Hashable> {
     var isComplete: Bool { waitingOn.isEmpty }
 }
 
-enum Eliminator {
+nonisolated enum Eliminator {
     static func run<ID: Hashable>(
         entrants: [ID],
         rule: EliminatorRule = EliminatorRule(),

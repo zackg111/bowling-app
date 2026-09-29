@@ -19,6 +19,8 @@ struct LeaderboardView: View {
 
     @Environment(\.modelContext) private var context
     @Query(filter: #Predicate<Bowler> { $0.isActive }) private var bowlers: [Bowler]
+    @Query(filter: #Predicate<Bowler> { $0.isPrimary }) private var primaries: [Bowler]
+    @Query(filter: #Predicate<Shot> { $0.bowler == nil }) private var unassignedShots: [Shot]
     @State private var category: Category = .average
 
     private var standings: [Ranked<Bowler>] {
@@ -29,6 +31,28 @@ struct LeaderboardView: View {
     var body: some View {
         let ranked = standings
         List {
+            if primaries.isEmpty && !unassignedShots.isEmpty {
+                Section {
+                    Label("Mark yourself with This is me to keep your watch shots", systemImage: "applewatch")
+                        .font(.callout.weight(.medium))
+                        .padding(14)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .glassEffect(.regular.tint(Theme.accent.opacity(0.25)), in: .rect(cornerRadius: 18))
+                        .listRowBackground(Color.clear)
+                        .listRowInsets(EdgeInsets())
+                }
+            }
+
+            if let me = primaries.first {
+                Section {
+                    NavigationLink(value: me) {
+                        YouCard(bowler: me, place: ranked.first { $0.item == me }?.place, category: category)
+                    }
+                    .listRowBackground(Color.clear)
+                    .listRowInsets(EdgeInsets())
+                }
+            }
+
             Section {
                 Picker("Category", selection: $category) {
                     ForEach(Category.allCases) { Text($0.rawValue).tag($0) }
@@ -94,6 +118,54 @@ struct LeaderboardView: View {
                                        description: Text("Enter a night's games to fill this leaderboard."))
             }
         }
+    }
+}
+
+/// The phone owner's own line: avatar, average, place, and watch speed.
+private struct YouCard: View {
+    let bowler: Bowler
+    let place: Int?
+    let category: LeaderboardView.Category
+
+    var body: some View {
+        let motion = bowler.motionStats
+        HStack(spacing: 14) {
+            AvatarView(bowler: bowler, size: 56)
+            VStack(alignment: .leading, spacing: 4) {
+                Text("You")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(Theme.accent)
+                Text(bowler.name)
+                    .font(.headline)
+                    .lineLimit(1)
+                Text(placeText)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+            Spacer(minLength: 8)
+            VStack(alignment: .trailing, spacing: 2) {
+                Text("\(bowler.average)")
+                    .font(.title.bold().monospacedDigit())
+                Text("average")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                if let latest = bowler.latestShot {
+                    Label("\(MotionStats.mph(latest.releaseSpeedMPH)) mph", systemImage: "speedometer")
+                        .font(.caption.weight(.semibold).monospacedDigit())
+                        .foregroundStyle(Theme.secondAccent)
+                    Text("top \(MotionStats.mph(motion.topSpeedMPH))")
+                        .font(.caption2.monospacedDigit())
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
+        .padding(16)
+        .glassEffect(.regular.tint(Theme.accent.opacity(0.12)), in: .rect(cornerRadius: 22))
+    }
+
+    private var placeText: String {
+        guard let place else { return "Not ranked in \(category.rawValue) yet" }
+        return "#\(place) in \(category.rawValue)"
     }
 }
 

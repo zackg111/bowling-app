@@ -43,10 +43,11 @@ struct AvatarPicker: View {
     @Bindable var bowler: Bowler
     var size: CGFloat = 120
     @State private var item: PhotosPickerItem?
+    @State private var picking = false
 
     var body: some View {
         VStack(spacing: 12) {
-            PhotosPicker(selection: $item, matching: .images) {
+            Button { picking = true } label: {
                 AvatarView(bowler: bowler, size: size)
                     .overlay(alignment: .bottomTrailing) {
                         Image(systemName: "camera.fill")
@@ -55,6 +56,7 @@ struct AvatarPicker: View {
                     }
             }
             .buttonStyle(.plain)
+            .photosPicker(isPresented: $picking, selection: $item, matching: .images)
 
             if bowler.photoData != nil {
                 Button("Remove Photo", role: .destructive) { bowler.photoData = nil }

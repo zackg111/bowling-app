@@ -1,0 +1,9 @@
+{
+  "id" : "eb84a0b3-4759-4f14-8f00-1cc10865ef53",
+  "targets" : [
+    {
+      "id" : "9cf4afa9-2262-4d5e-bd70-daee8d7c6b1b",
+      "name" : "BowlingLeague"
+    }
+  ]
+}
