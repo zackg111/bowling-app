@@ -6,6 +6,8 @@ struct NightsView: View {
     @Query(sort: \Night.date, order: .reverse) private var nights: [Night]
     /// A night just added with +, opened right away.
     @State private var newNight: Night?
+    /// Night waiting on the delete confirmation.
+    @State private var deleting: Night?
 
     var body: some View {
         List {
@@ -38,12 +40,25 @@ struct NightsView: View {
                     }
                     .padding(.vertical, 4)
                 }
-            }
-            .onDelete { offsets in
-                for index in offsets { context.delete(nights[index]) }
+                // No full swipe: deleting a night always asks first.
+                .swipeActions(allowsFullSwipe: false) {
+                    Button("Delete", systemImage: "trash", role: .destructive) { deleting = night }
+                }
             }
         }
         .laneBackground()
+        .confirmationDialog("Delete \(deleting?.title ?? "this night")?",
+                            isPresented: Binding { deleting != nil } set: { if !$0 { deleting = nil } },
+                            titleVisibility: .visible,
+                            presenting: deleting) { night in
+            Button("Delete Night", role: .destructive) {
+                context.delete(night)
+                deleting = nil
+            }
+        } message: { night in
+            let bowlers = (night.entries ?? []).count
+            Text("\(night.date.formatted(date: .abbreviated, time: .omitted)) and all \(bowlers) bowlers' scores, doubles and eliminator for it will be deleted. This can't be undone.")
+        }
         .navigationTitle("Nights")
         .navigationDestination(for: Night.self) { NightDetailView(night: $0) }
         .navigationDestination(item: $newNight) { NightDetailView(night: $0, isNew: true) }
