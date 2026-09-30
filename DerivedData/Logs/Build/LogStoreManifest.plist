@@ -6,7 +6,7 @@
 	<integer>13</integer>
 	<key>logs</key>
 	<dict>
-		<key>32B264B6-207A-4FBC-92AB-68D9789B0101</key>
+		<key>87E7C57E-3050-42E6-A67E-D8A89B3BD371</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,133 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>32B264B6-207A-4FBC-92AB-68D9789B0101.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>5</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>BowlingLeague project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>BowlingLeague</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project BowlingLeague for testing with scheme BowlingLeague</string>
-			<key>timeStartedRecording</key>
-			<real>812474439.100191</real>
-			<key>timeStoppedRecording</key>
-			<real>812474449.51961696</real>
-			<key>title</key>
-			<string>Building project BowlingLeague for testing with scheme BowlingLeague</string>
-			<key>uniqueIdentifier</key>
-			<string>32B264B6-207A-4FBC-92AB-68D9789B0101</string>
-		</dict>
-		<key>48869FD4-C65D-4C8E-91D2-100CFDFE7DEB</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>48869FD4-C65D-4C8E-91D2-100CFDFE7DEB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>5</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>BowlingLeague project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>BowlingLeague</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Testing project BowlingLeague with scheme BowlingLeague</string>
-			<key>timeStartedRecording</key>
-			<real>812474385.97646701</real>
-			<key>timeStoppedRecording</key>
-			<real>812474422.21639502</real>
-			<key>title</key>
-			<string>Testing project BowlingLeague with scheme BowlingLeague</string>
-			<key>uniqueIdentifier</key>
-			<string>48869FD4-C65D-4C8E-91D2-100CFDFE7DEB</string>
-		</dict>
-		<key>49F4CE8E-FA3B-467C-A45E-661C43B0E059</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>49F4CE8E-FA3B-467C-A45E-661C43B0E059.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>5</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>BowlingLeague project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>BowlingLeague</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project BowlingLeague for testing with scheme BowlingLeague</string>
-			<key>timeStartedRecording</key>
-			<real>812474459.189574</real>
-			<key>timeStoppedRecording</key>
-			<real>812474467.15225697</real>
-			<key>title</key>
-			<string>Building project BowlingLeague for testing with scheme BowlingLeague</string>
-			<key>uniqueIdentifier</key>
-			<string>49F4CE8E-FA3B-467C-A45E-661C43B0E059</string>
-		</dict>
-		<key>7B70E2E1-0FA6-4826-88DC-6A9E34359879</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7B70E2E1-0FA6-4826-88DC-6A9E34359879.xcactivitylog</string>
+			<string>87E7C57E-3050-42E6-A67E-D8A89B3BD371.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -164,15 +38,15 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building project BowlingLeague with scheme BowlingLeague and configuration Debug</string>
+			<string>Testing project BowlingLeague with scheme BowlingLeague</string>
 			<key>timeStartedRecording</key>
-			<real>812474230.82074296</real>
+			<real>812476293.87243998</real>
 			<key>timeStoppedRecording</key>
-			<real>812474361.91233802</real>
+			<real>812476321.09754503</real>
 			<key>title</key>
-			<string>Building project BowlingLeague with scheme BowlingLeague and configuration Debug</string>
+			<string>Testing project BowlingLeague with scheme BowlingLeague</string>
 			<key>uniqueIdentifier</key>
-			<string>7B70E2E1-0FA6-4826-88DC-6A9E34359879</string>
+			<string>87E7C57E-3050-42E6-A67E-D8A89B3BD371</string>
 		</dict>
 		<key>8F435BEA-8B2C-4FCC-B404-E7B28796AFA3</key>
 		<dict>

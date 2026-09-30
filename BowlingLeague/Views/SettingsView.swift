@@ -38,7 +38,7 @@ struct SettingsView: View {
             } header: {
                 Text("Eliminator")
             } footer: {
-                Text("Half the field, rounded up to an even number, moves on after each game. Smaller nights pay 3 places.")
+                Text("Half the field, rounded up to an even number, moves on after game 1. After game 2 it's plain half (10 bowlers → 5). Smaller nights pay 3 places.")
             }
 
             Section {

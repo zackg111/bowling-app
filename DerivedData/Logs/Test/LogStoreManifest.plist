@@ -6,6 +6,65 @@
 	<integer>13</integer>
 	<key>logs</key>
 	<dict>
+		<key>A89970A3-3BD8-4D02-AB4D-0ADB4685AA86</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>87E7C57E-3050-42E6-A67E-D8A89B3BD371</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.unit.cocoaUnitTest</string>
+			<key>fileName</key>
+			<string>Test-BowlingLeague-2026.09.30_11-51-33--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BowlingLeague project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BowlingLeague</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Test BowlingLeague</string>
+			<key>timeStartedRecording</key>
+			<real>812476293.87981796</real>
+			<key>timeStoppedRecording</key>
+			<real>812476691.86091495</real>
+			<key>title</key>
+			<string>Test BowlingLeague</string>
+			<key>uniqueIdentifier</key>
+			<string>A89970A3-3BD8-4D02-AB4D-0ADB4685AA86</string>
+		</dict>
 		<key>B9BA5A21-F129-498E-BAD8-E675428FC6E4</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -64,65 +123,6 @@
 			<string>Test BowlingLeague</string>
 			<key>uniqueIdentifier</key>
 			<string>B9BA5A21-F129-498E-BAD8-E675428FC6E4</string>
-		</dict>
-		<key>BF2B76BB-DE94-4971-A8FC-23245B3820DA</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>48869FD4-C65D-4C8E-91D2-100CFDFE7DEB</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>5</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.unit.cocoaUnitTest</string>
-			<key>fileName</key>
-			<string>Test-BowlingLeague-2026.09.30_11-19-46--0400.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>6</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>BowlingLeague project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>BowlingLeague</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Test BowlingLeague</string>
-			<key>timeStartedRecording</key>
-			<real>812474386.02268803</real>
-			<key>timeStoppedRecording</key>
-			<real>812474422.37907505</real>
-			<key>title</key>
-			<string>Test BowlingLeague</string>
-			<key>uniqueIdentifier</key>
-			<string>BF2B76BB-DE94-4971-A8FC-23245B3820DA</string>
 		</dict>
 	</dict>
 </dict>

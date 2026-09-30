@@ -13,6 +13,12 @@ nonisolated struct EliminatorRule: Equatable {
         return half.isMultiple(of: 2) ? half : half + 1
     }
 
+    /// The cut into the last game takes plain half, rounded up but not to
+    /// even (10 → 5, 9 → 5).
+    static func advancingToFinal(from field: Int) -> Int {
+        (field + 1) / 2
+    }
+
     func payingPlaces(entrants: Int) -> Int {
         entrants >= fourPlacesFrom ? 4 : 3
     }
@@ -20,7 +26,8 @@ nonisolated struct EliminatorRule: Equatable {
 
 /// Game-by-game eliminator on handicapped scores. Everyone entered bowls
 /// game 1; half the field (rounded up to even) moves on after each game
-/// but the last, and the last game's top 3 or 4 cash. Ties at a cut all move on.
+/// but the last. The cut into the last game is plain half (10 → 5), and the
+/// last game's top 3 or 4 cash. Ties at a cut all move on.
 nonisolated struct EliminatorRound<ID: Hashable> {
     let game: Int
     let isFinal: Bool
@@ -52,7 +59,13 @@ nonisolated enum Eliminator {
             let waiting = alive.filter { score($0, game) == nil }
             let standings = Ranking.rank(scored) { score($0, game) ?? 0 }
 
-            let keep = isFinal ? paying : EliminatorRule.advancing(from: alive.count)
+            let keep = if isFinal {
+                paying
+            } else if game == rule.games - 1 {
+                EliminatorRule.advancingToFinal(from: alive.count)
+            } else {
+                EliminatorRule.advancing(from: alive.count)
+            }
             let advancing = waiting.isEmpty ? standings.filter { $0.place <= keep }.map(\.item) : []
 
             rounds.append(EliminatorRound(game: game, isFinal: isFinal, standings: standings,

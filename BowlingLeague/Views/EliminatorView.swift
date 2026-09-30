@@ -23,7 +23,7 @@ struct EliminatorView: View {
                     }
                 }
             } footer: {
-                Text("Scores include handicap. Half the field, rounded up to even, moves on each game. Top \(rule.payingPlaces(entrants: entrants.count)) cash tonight.")
+                Text("Scores include handicap. Half the field, rounded up to even, moves on after game 1, then plain half after game 2. Top \(rule.payingPlaces(entrants: entrants.count)) cash tonight.")
             }
 
             ForEach(rounds, id: \.game) { round in

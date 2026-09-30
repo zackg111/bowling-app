@@ -46,14 +46,27 @@ struct EliminatorTests {
         #expect(rule.payingPlaces(entrants: 20) == 4)
     }
 
+    @Test(arguments: [(10, 5), (9, 5), (14, 7), (12, 6), (6, 3)])
+    func intoTheFinalIsPlainHalf(field: Int, expected: Int) {
+        #expect(EliminatorRule.advancingToFinal(from: field) == expected)
+    }
+
     @Test func cutsEachGameThenPaysTopThree() {
-        // 10 bowlers: 10 → 6 → 4, then top 3 cash.
+        // 10 bowlers: 10 → 6 → 3, then top 3 cash.
         let ids = Array(1...10)
         let rounds = Eliminator.run(entrants: ids) { id, game in 100 + id * game }
-        #expect(rounds.map(\.keep) == [6, 4, 3])
+        #expect(rounds.map(\.keep) == [6, 3, 3])
         #expect(Set(rounds[0].advancing) == Set(5...10))
-        #expect(Set(rounds[1].advancing) == Set(7...10))
+        #expect(Set(rounds[1].advancing) == Set(8...10))
         #expect(rounds[2].advancing == [10, 9, 8])
+    }
+
+    @Test func tenInGameTwoKeepsFive() {
+        // 20 bowlers: 20 → 10 → 5, then top 4 cash.
+        let ids = Array(1...20)
+        let rounds = Eliminator.run(entrants: ids) { id, game in 100 + id * game }
+        #expect(rounds.map(\.keep) == [10, 5, 4])
+        #expect(Set(rounds[1].advancing) == Set(16...20))
     }
 
     @Test func tiesAtTheCutAllAdvance() {
