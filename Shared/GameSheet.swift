@@ -2,7 +2,7 @@ import Foundation
 
 /// One ball: how many pins it knocked down and, when entered on the pin
 /// deck, exactly which pins were still standing afterwards.
-nonisolated struct Roll: Codable, Hashable {
+nonisolated struct Roll: Codable, Hashable, Sendable {
     var count: Int
     /// Pin numbers 1–10 still up after this ball. Nil when only the count was entered.
     var standing: Set<Int>?
@@ -11,7 +11,7 @@ nonisolated struct Roll: Codable, Hashable {
 /// A ball-by-ball scoresheet for one game, scored the standard way:
 /// a strike adds the next two balls, a spare the next one, and the 10th
 /// frame gets up to three balls.
-nonisolated struct GameSheet: Codable, Hashable {
+nonisolated struct GameSheet: Codable, Hashable, Sendable {
     static let allPins: Set<Int> = Set(1...10)
     static let perfectGame = 300
 

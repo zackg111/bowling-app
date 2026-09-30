@@ -14,6 +14,8 @@ struct BowlingLeagueApp: App {
 
         // Shots from the Apple Watch are saved as they arrive, no tap needed.
         ShotLink.shared.onReceive = { Shot.receive($0, in: context) }
+        // So are games scored on the watch.
+        ShotLink.shared.onReceiveGame = { WatchScoring.receive($0, in: context) }
         ShotLink.shared.activate()
 
         #if DEBUG
