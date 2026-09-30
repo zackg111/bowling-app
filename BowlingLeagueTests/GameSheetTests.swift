@@ -60,24 +60,29 @@ struct GameSheetTests {
     @Test func refusesMorePinsThanStanding() {
         var game = sheet([7])
         #expect(game.next?.pinsUp == 3)
-        #expect(!game.knockDown(count: 4))
+        let tooMany = game.knockDown(count: 4)
+        #expect(!tooMany)
         #expect(game.rolls.count == 1)
     }
 
     @Test func noBallsAfterTheGameEnds() {
         var game = sheet(Array(repeating: 0, count: 20))
-        #expect(!game.knockDown(count: 0))
+        let afterTheEnd = game.knockDown(count: 0)
+        #expect(!afterTheEnd)
         #expect(game.next == nil)
     }
 
     @Test func pinDeckTracksWhatsStanding() {
         var game = GameSheet()
-        #expect(game.knockDown([1, 2, 3, 5, 8, 9]))
+        let firstBall = game.knockDown([1, 2, 3, 5, 8, 9])
+        #expect(firstBall)
         #expect(game.next?.standing == [4, 6, 7, 10])
         #expect(game.next?.pinsUp == 4)
         // Can't knock down a pin that's already down.
-        #expect(!game.knockDown([1]))
-        #expect(game.knockDown([4, 6, 7, 10]))
+        let alreadyDown = game.knockDown([1])
+        #expect(!alreadyDown)
+        let spare = game.knockDown([4, 6, 7, 10])
+        #expect(spare)
         #expect(game.frames[0].marks == ["6", "/"])
         #expect(game.next?.standing == GameSheet.allPins)
     }

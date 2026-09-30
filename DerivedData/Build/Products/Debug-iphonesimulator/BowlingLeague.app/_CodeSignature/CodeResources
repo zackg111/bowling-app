@@ -14,11 +14,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		0QLh4rnMOloCJOk5HCzF57YL5l0=
+		5CQwgJQ4HQH/4252Ufo36ZT0Hj4=
 		</data>
 		<key>BowlingLeague.debug.dylib</key>
 		<data>
-		2MJWtU7kIiCnQjubKcCerWDo2R8=
+		QFKMGT7Zct937dxSuUL6ecZwLDs=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -27,6 +27,18 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/BowlingLeagueTests.xctest/BowlingLeagueTests</key>
+		<data>
+		PWHcd2fW80m1z2I5mXMuWji6EPY=
+		</data>
+		<key>PlugIns/BowlingLeagueTests.xctest/Info.plist</key>
+		<data>
+		ynsg2smHH32vmXjRE6G8lMfFTss=
+		</data>
+		<key>PlugIns/BowlingLeagueTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		i+G99hkavMroCs1cTyVKBO3b4vw=
 		</data>
 		<key>Watch/BowlingWatch.app/Assets.car</key>
 		<data>
@@ -58,7 +70,7 @@
 		</data>
 		<key>__preview.dylib</key>
 		<data>
-		qk+B7Yp1y1j5cQGbCBc10m82LMc=
+		cyLgbRMaowXXiVwg8vJnB2HfvB8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,14 +93,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tXX3t+HHqhCyeHhNQHf7RuqZH4driq4NgAoxi1OvRGs=
+			wk/pybeajNRgfm/LJkyHLY800laHfHgAvsZmpLw0Pz8=
 			</data>
 		</dict>
 		<key>BowlingLeague.debug.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wH7dhFR4XVJ/ZldP8BiYbkm8VmQIpnTY01v5Kw4R0U8=
+			aSotbqCxzwXiWU2XSKGFAhqfyPFuB7sB4pelwU04jKs=
+			</data>
+		</dict>
+		<key>PlugIns/BowlingLeagueTests.xctest/BowlingLeagueTests</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FWnwuS951a/aJSloAX4DLLox42FDLd/3WP/7c8y3W9I=
+			</data>
+		</dict>
+		<key>PlugIns/BowlingLeagueTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hbIZti54dtm0N12QYWdv0yb8etsjXltlBvpgDs02Sak=
+			</data>
+		</dict>
+		<key>PlugIns/BowlingLeagueTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ANyA7/dMS2Kdvi7Ru9jtkzqipmopnXxraD7fmcA3Xf8=
 			</data>
 		</dict>
 		<key>Watch/BowlingWatch.app/Assets.car</key>
@@ -144,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hh738eGNS78HKyChhhlVcO+n+8QKuc0T/Ablqm9jj+w=
+			0INNcU/vsedPq7miSju6oCAnEgtb+WZUeBQyWNX5OiA=
 			</data>
 		</dict>
 	</dict>
