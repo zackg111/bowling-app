@@ -1,0 +1,30 @@
+{
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/EliminatorView.swift" : {
+    "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/EliminatorView.swiftconstvalues",
+    "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/EliminatorView.d",
+    "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/EliminatorView.dia",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/EliminatorView.o",
+    "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/EliminatorView.swiftdeps"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/InGameView.swift" : {
+    "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/InGameView.swiftconstvalues",
+    "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/InGameView.d",
+    "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/InGameView.dia",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/InGameView.o",
+    "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/InGameView.swiftdeps"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/IslandView.swift" : {
+    "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/IslandView.swiftconstvalues",
+    "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/IslandView.d",
+    "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/IslandView.dia",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/IslandView.o",
+    "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/IslandView.swiftdeps"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/LeaderboardView.swift" : {
+    "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/LeaderboardView.swiftconstvalues",
+    "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/LeaderboardView.d",
+    "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/LeaderboardView.dia",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/LeaderboardView.o",
+    "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/x86_64/LeaderboardView.swiftdeps"
+  }
+}

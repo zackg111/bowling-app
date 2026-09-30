@@ -135,20 +135,27 @@ struct EntryRow: View {
                 }
                 Spacer()
                 VStack(alignment: .trailing, spacing: 0) {
-                    Text("\(entry.totalWithHandicap(rule))")
+                    let total = entry.isAbsent ? entry.islandSeries(rule) : entry.totalWithHandicap(rule)
+                    Text("\(total)")
                         .font(.title2.weight(.bold))
                         .monospacedDigit()
                         .contentTransition(.numericText())
-                        .animation(.snappy, value: entry.totalWithHandicap(rule))
+                        .animation(.snappy, value: total)
                     Text("with hcp")
                         .font(.caption2)
                         .foregroundStyle(.secondary)
                 }
             }
-            HStack(spacing: 8) {
-                gameField("G1", $entry.game1)
-                gameField("G2", $entry.game2)
-                gameField("G3", $entry.game3)
+            if entry.isAbsent {
+                Label("Absent · blind \(entry.blindScore) a game, counted on the Island only", systemImage: "person.fill.questionmark")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            } else {
+                HStack(spacing: 8) {
+                    gameField("G1", $entry.game1)
+                    gameField("G2", $entry.game2)
+                    gameField("G3", $entry.game3)
+                }
             }
         }
         .padding(.vertical, 4)

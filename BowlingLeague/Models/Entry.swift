@@ -28,6 +28,9 @@ final class Entry {
     var doublesTeam: Int?
     var doublesPartnerName: String?
     var inEliminator = true
+    /// Not bowling tonight. The Island counts a blind score for them; their
+    /// games stay empty, so averages, stats and every other game skip them.
+    var isAbsent = false
     /// In-game mode's ball-by-ball sheets for games 1–3, as JSON.
     var sheetsData: Data?
 
@@ -137,6 +140,38 @@ final class Entry {
             setGame(number, to: sheet.total)
         } else if wasComplete {
             setGame(number, to: nil)
+        }
+    }
+
+    /// What an absent bowler is credited with for each game on the Island:
+    /// their average minus 10 pins.
+    var blindScore: Int { max(0, average - 10) }
+
+    /// The three games the Island counts: the blind score when absent.
+    var islandGames: [Int?] { isAbsent ? Array(repeating: blindScore, count: 3) : games }
+
+    /// The Island's handicapped series for this night. Zero when nothing was bowled.
+    func islandSeries(_ rule: HandicapRule) -> Int {
+        let played = islandGames.compactMap { $0 }
+        return played.isEmpty ? 0 : played.reduce(0, +) + rule.series(average: average)
+    }
+
+    /// Marks them absent (or back), stepping them out of the doubles and
+    /// eliminator while they are away, since they have no scores for those.
+    func setAbsent(_ absent: Bool) {
+        guard absent != isAbsent else { return }
+        isAbsent = absent
+        if absent {
+            for number in Set(teamNumbers) {
+                for entry in night?.entries ?? [] where entry.teamNumbers.contains(number) {
+                    entry.leaveTeam(number)
+                }
+            }
+            doublesSpots = 0
+            inEliminator = false
+        } else {
+            doublesSpots = 1
+            inEliminator = true
         }
     }
 

@@ -6,6 +6,7 @@ struct SettingsView: View {
     @AppStorage("fourPlacesFrom") private var fourPlacesFrom = 20
     @AppStorage("useBowledAverage") private var useBowledAverage = true
     @AppStorage("bowledAverageGames") private var bowledAverageGames = 9
+    @AppStorage("islandWeeks") private var islandWeeks = 1
 
     var body: some View {
         Form {
@@ -38,6 +39,16 @@ struct SettingsView: View {
                 Text("Eliminator")
             } footer: {
                 Text("Half the field, rounded up to an even number, moves on after each game. Smaller nights pay 3 places.")
+            }
+
+            Section {
+                Stepper(islandWeeks == 1 ? "Every week" : "Every \(islandWeeks) weeks", value: $islandWeeks, in: 1...12)
+            } header: {
+                Text("Island")
+            } footer: {
+                Text(islandWeeks == 1
+                     ? "Someone goes swimming after every night."
+                     : "Someone goes swimming every \(islandWeeks) weeks. Scores add up tonight and the \(islandWeeks - 1) \(islandWeeks == 2 ? "night" : "nights") before it.")
             }
         }
         .laneBackground()

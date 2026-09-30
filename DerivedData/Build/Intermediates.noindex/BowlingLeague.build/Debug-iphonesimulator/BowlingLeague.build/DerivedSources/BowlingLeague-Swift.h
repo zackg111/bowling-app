@@ -374,9 +374,9 @@ extern "C" {
 
 @class WCSession;
 @class NSString;
-/// Carries measured shots from the watch to the phone. Uses
-/// <code>transferUserInfo</code>, which queues and delivers even if the phone app isn’t
-/// open right now.
+/// Carries measured shots and scored games from the watch to the phone. Uses
+/// <code>transferUserInfo</code>, which queues and delivers in order even if the phone
+/// app isn’t open right now.
 SWIFT_CLASS("_TtC13BowlingLeague8ShotLink")
 @interface ShotLink : NSObject <WCSessionDelegate>
 - (void)session:(WCSession * _Nonnull)session didReceiveUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;

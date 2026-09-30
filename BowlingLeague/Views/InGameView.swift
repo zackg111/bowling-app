@@ -16,7 +16,7 @@ struct InGameView: View {
     /// Who got each ball, so Undo can step back across bowlers.
     @State private var history: [(bowler: PersistentIdentifier, game: Int)] = []
 
-    private var entries: [Entry] { night.sortedEntries }
+    private var entries: [Entry] { night.sortedEntries.filter { !$0.isAbsent } }
 
     private var current: Entry? {
         entries.first { $0.persistentModelID == currentID } ?? entries.first

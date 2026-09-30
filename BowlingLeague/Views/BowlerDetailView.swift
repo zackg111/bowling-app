@@ -46,6 +46,21 @@ struct BowlerDetailView: View {
                 }
             }
 
+            Section {
+                Toggle("On the Island", systemImage: "leaf.fill", isOn: $bowler.onIsland)
+                if bowler.onIsland {
+                    if bowler.islandOutDate != nil {
+                        Label("Out for the season", systemImage: "xmark.circle").foregroundStyle(.secondary)
+                    } else if bowler.isIslandSwimmer {
+                        Label("Swimming. Needs the highest series to get back on.", systemImage: "figure.pool.swim").foregroundStyle(.teal)
+                    } else if bowler.hasImmunity {
+                        Label("Has immunity", systemImage: "shield.fill").foregroundStyle(.blue)
+                    }
+                }
+            } header: {
+                Text("Island")
+            }
+
             Section("Stats") {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 100), spacing: 12)], spacing: 12) {
                     StatTile(title: "Bowled avg", value: stats.average.map(String.init) ?? "–", systemImage: "chart.bar.fill")

@@ -221,434 +221,434 @@
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Accessibility-9EFTVN3CLOY8A5SHYPMB1U4XQ.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Accessibility-AZYBZ3VDBW9XUO3B58SUJOG24.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Accessibility"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreAudio.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreAudio-D8W9KIQOXVOAC2XJ543S9POHW.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreAudio-6NYYI9TYRAQVSC69UT0DNBNBT.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreAudio"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreAudioTypes.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreAudioTypes-ATS90VHHFD6TNICB3BOT0X7HM.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreAudioTypes-DQ5W7ONMIL1KXU5JFBU69QCUG.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreAudioTypes"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreData-1R4E5Z4TXLHAQSNCW239DSSGL.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreData-TH6UXZW76YJE4P012LW6BKE9.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreData"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreFoundation-3Q7DX7LO1PAMMJO63XFTZLTSX.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreFoundation-ACCTYHVAF8LDAX9NUBPJ4F3HO.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreFoundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreGraphics-JALMCRYZSYAI1E8N1MH3JS1J.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreGraphics-5P4N5BZB4NOFKJVN6IFLMGX2H.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreGraphics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreLocation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreLocation-ASK3OYHQV1DEDXUHGSZDEZ6Z.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreLocation-AOJ9QF4PIJOH33DNRNJL9BYFQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreLocation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreMedia.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreMedia-C3WMXZS7G7IQZSCLPPGN0JAHL.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreMedia-6FA6EKIWCEJVE0WOYYFZDHO1B.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreMedia"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreMotion.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreMotion-1K5TA6MEK8T3GF0I38NIXPT2X.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreMotion-8V8QSXW6NCIYTXW7F554GT118.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreMotion"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreText-4AR1NJ08ZOZZFCKB6Q53ESR6V.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreText-DFB6E98EOJBQB5BETVOSCLUPP.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreText"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreTransferable-23Z4MQ6NCLNPIV045R6GL3KFD.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreTransferable-3N7M0K3YS6WLA349JPJD17HZ3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreTransferable"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreVideo-752VE89AA8EPF6C1R678862SD.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/CoreVideo-EVNSID9BH9LIRLQ2YONRB45A0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreVideo"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/Darwin.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Darwin-21PLJ3OGFUZLQM8U9XQT70P9A.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Darwin-F5AFG1A6RPRW9DUKQP7VHTR71.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Darwin"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/DataDetection-3AOC7QD2M0EP4N5WG90PFDUE8.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/DataDetection-7DIY75A641FD1WCOKWI4WGFOR.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DataDetection"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-8JDXPMZNDTYOJKNJ3LQO1AS97.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-D7G6HNERIY9O2Y0MOKJWIYK5I.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DeveloperToolsSupport"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/dispatch.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Dispatch-3UXIA7PDUQS2EYLCG6L7FZT4D.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Dispatch-6HWG0IQ7C84X4ECM2A019SF69.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Dispatch"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Foundation-ODXGT65J2J39ONJPP8VHXA29.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Foundation-7VJGJT83GJ7KDZTRAHVUZ381Y.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Foundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/HealthKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/HealthKit-1PKFELVOZ1EPWANX1DE3EB8SC.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/HealthKit-6BKF8GIPNQEPRVNE1HNMFWXH.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "HealthKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/HomeKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/HomeKit-UDOAD07OPQR673G6UZE8THV9.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/HomeKit-9KCFM2KYO170EL2BG9P9EOIQL.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "HomeKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinBasic.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/MachO-AMW42N7GR4JNUPM15I4GL6F2X.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/MachO-2O2QVX8QAVG19M4PKKON8133B.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "MachO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/MapKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/MapKit-H8GZ96ZI8O4SZKVQIJ5ZR8A7.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/MapKit-5LFMHMPCI6TKTOS07Z1BKVGIY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "MapKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/OSLog-3C8W6H1OMU2FPH15FI32ZGGQ3.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/OSLog-4E0HSLVLGZMC6YI0LYYD5DDXS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OSLog"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/ObjectiveC.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/ObjectiveC-CJ4VYJBR7CPXPQQWDGMWEMLOW.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/ObjectiveC-BHN4A8CZR1P9GV5EV0KQFQLPB.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ObjectiveC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/QuartzCore-6C2WBSYCWRQ1KUFAKQAKXJRVO.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/QuartzCore-AVCQDGG8IRZUMF8QEPJCKYDW.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "QuartzCore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/SceneKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/SceneKit-D7BJD498T7EA6GUBAS0U9AGZ4.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/SceneKit-41BTXX127X2KWTB2NJD4G2PDW.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SceneKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Security-3AI0NYF0ZCXJHSN0GMG3Z449G.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Security-E2OS68B8P4EVRUQXAO8SMRTPB.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Security"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/Spatial\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Spatial-B0EBYDJE0WMP22ERO1WFXH9HH.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Spatial-EGOBOTNJSMO0AIOOAVSFO26S8.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Spatial"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/SwiftShims-DRDFZKWRU6RETFJJPSRX1ZGRS.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/SwiftShims-16Q6B3PH2JMRHNZHF1H5ZRONR.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/SwiftUI-551OP73GWSN3ZU3KRMH2C1XVL.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/SwiftUI-5X699W7RK8R08L1Y0L52O9MY6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUI"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/SwiftUICore-47Y5MYOT2T1XYHXB1B57SBS8I.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/SwiftUICore-CA4OWUDMYEND5Z0Y4MW5MLXO5.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUICore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Symbols-9O8QDN6YCJTYO9KC0YLRYSWNE.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/Symbols-3H9NMCX0A6U4VX7B2XGRX7FZQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Symbols"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/UIKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/UIKit-5DNJEN5NU1EQWLPYJ5MIDTUCN.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/UIKit-A8LPR0JERB3PEHSNEOSN7H81F.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UIKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/SubFrameworks\/UIUtilities.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/UIUtilities-1L1BPVCSOD6X8OXFL7LVZ6YET.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/UIUtilities-CBJWQ60JO6FNDLBF6OWB26F6M.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UIUtilities"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-AWNAO9F5KAA7XPFOTW0BTH5PV.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-A1PU9PRMH3DUQFJY8YYSVC6I4.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UniformTypeIdentifiers"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/UserNotifications.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/UserNotifications-CA0NUE1ZO9MG51D13FVVM4XT9.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/UserNotifications-2AA2AU9DAYDRES9VR11MKXKCU.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UserNotifications"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/WatchConnectivity.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/WatchConnectivity-6SPP4YLAP2FKL6IM0HGNY465.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/WatchConnectivity-DFTG8MZX8CXL5IHKRKVKQR19E.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "WatchConnectivity"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/WatchKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/WatchKit-89SGMVAB7G1CLQJS6MNZVIXGS.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/WatchKit-491XQ2WBN4XM456AQ0DJICM9V.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "WatchKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/xpc.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/XPC-D5903C1TRB8B7KRYM9TPAKA22.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/XPC-6R77VVBRBX2GH8T73C06JEJD1.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "XPC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-BZ51KRDPAWYPULHFTVK4HCVHI.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-ANUHS7QQJPK9NOI3YLQ4LXEQQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_AvailabilityInternal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_float-5RQUZP75SLAEZPUBL7FRYI4QS.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_float-ESHDP2DCHRR43KE4FT6NB1LK7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_float"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-7PY8NDIM13RH3X4H8QRQM2WOY.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-CNK6IDOGMLKNMJF5PH8XRFDIK.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_intrinsics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-50N8JOUMAWQLNUVC1Z73BYNP6.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-E13PLD6ZX9ZD0V53UFD9C04QC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_inttypes"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_limits-1O7KV94N7O3NDVKFQD2AJ8HWP.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_limits-1MWNPDWPMDP1PDOF3188QIROQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_limits"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-DV1H4YXWQ71M6VJHHI5CFEXRZ.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-AY0IY0UYTJDWAUM56IRICLMJI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdarg"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-2WNMKH2E4IOYSEUTY10B1L6UV.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-587ASVTFGDBCZOHVN6KUJTGFT.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdatomic"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-86A4D1HPEMNKLYQW2BA08A8XV.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-82BUPEDLSI2IU7HKEJSAFIQQZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdbool"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stddef-ECOV7FIWWUR7HRG6SFZWWJ70W.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stddef-892W57OGZU1C2GHVHN9J1W0H8.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stddef"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stdint-CM6HTZ540YXHRHY2NLCPTLGHI.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_stdint-7TJZD6XHJTOT9RTHAAZ2AQ3JB.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdint"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-ANILI2KO7VP0HGPVO3KWOUC11.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-7WIPVV3U27CGMGHCK40O466BD.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_tgmath"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-EHG5NA1J2Y4TEM49LV5AKFYGO.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-39YRUJDVVFTMI0SBNV8EGDWGR.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation1"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-CCK90JA1HELT7HDOH3M4UAJ6C.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-35K1D79MN21F83SMRB0VU3VMR.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation2"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation3.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-1X0MFT5XVH8N6YC2CKIDHSH03.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-83UDZTP4K10D76WA3FDRKO78X.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation3"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/System\/Library\/Frameworks\/_LocationEssentials.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_LocationEssentials-6CNJJTQ5XLJYGWEGVJM5RX64A.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_LocationEssentials-5Z3OLPRPSF2X3QTL4EONL4KF0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_LocationEssentials"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-6SCROPN94CUN524WWBK22D59Z.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-51VFRZ8TXQXH22MI0CUUH5F4A.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_SwiftConcurrencyShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/os-DJAJJVUFVACZA0GPT61T54C4Q.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/os-23769BR7VSXF8EN3VINFYZTVJ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/os_object-CGVOWAEQDAKDCYDIVVWJN5FM.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/os_object-6EZCV2Z9HE83FMW595IUK5UGZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_object"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/os_workgroup-DQZNC3XH1CLASW75TCAGKCX2J.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/os_workgroup-2VTWJ82P75PC8NWC5HIXX3GYL.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_workgroup"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/ptrauth-9VSH4OS0LVS0FX2VDKBX4K69S.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/ptrauth-B2G8ETNB32ZGYMK80UTCTISPU.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrauth"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/ptrcheck-3BPCF9KUKTBHCROLX1TQPQXPY.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/ptrcheck-5NGX1HUHBZXYVFW30UII2JN4K.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrcheck"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/simd\/module.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/simd-3IJHUTEOMQQ5A0NVIG3LQ4VV9.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/simd-4VIHUTR0Z8YQFGSF5M8K2FA6D.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "simd"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/c_standard_library.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/string_h-4OT166WY6UQ5XPWEG8UPJINQ7.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/string_h-5F8859MYX7XBK415IF37775WN.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "string_h"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/WatchSimulator.platform\/Developer\/SDKs\/WatchSimulator.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/sys_types-1HQS7I4QFUAX0E10AWUEN7WT1.pcm",
+    "clangModulePath" : "\/Volumes\/Extra\/XCode\/The League\/bowling-app\/DerivedData\/SDKExplicitPrecompiledModules\/sys_types-8P935HLB9KFWAO2MB9V4C4PIY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "sys_types"

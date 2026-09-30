@@ -19,5 +19,12 @@
     "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/RootView.dia",
     "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/RootView.o",
     "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/RootView.swiftdeps"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/SettingsView.swift" : {
+    "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SettingsView.dia",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SettingsView.swiftdeps"
   }
 }

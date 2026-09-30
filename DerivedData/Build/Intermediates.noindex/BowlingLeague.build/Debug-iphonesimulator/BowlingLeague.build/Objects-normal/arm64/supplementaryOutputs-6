@@ -6,6 +6,13 @@
     "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/EliminatorView.o",
     "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/EliminatorView.swiftdeps"
   },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/InGameView.swift" : {
+    "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/InGameView.swiftconstvalues",
+    "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/InGameView.d",
+    "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/InGameView.dia",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/InGameView.o",
+    "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/InGameView.swiftdeps"
+  },
   "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/IslandView.swift" : {
     "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/IslandView.swiftconstvalues",
     "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Debug-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/IslandView.d",

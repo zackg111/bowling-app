@@ -110,6 +110,34 @@ struct IslandTests {
         #expect(night.kickedOff == ["C"])
     }
 
+    @Test func everyWeekIsAnEliminationByDefault() {
+        let round = Island.round(nights: ["n1", "n2"], weeks: 1) { _ in false }
+        #expect(round.isElimination)
+        #expect(round.window == ["n2"])
+    }
+
+    @Test func twoWeekRoundAddsThePreviousNight() {
+        let first = Island.round(nights: ["n1"], weeks: 2) { _ in false }
+        #expect(!first.isElimination)
+        #expect(first.week == 1)
+
+        let second = Island.round(nights: ["n1", "n2"], weeks: 2) { _ in false }
+        #expect(second.isElimination)
+        #expect(second.window == ["n1", "n2"])
+    }
+
+    @Test func roundRestartsAfterARecordedElimination() {
+        let round = Island.round(nights: ["n1", "n2", "n3"], weeks: 2) { $0 == "n2" }
+        #expect(!round.isElimination)
+        #expect(round.window == ["n3"])
+    }
+
+    @Test func missedRecordingStillOnlyCountsTheLastWeeks() {
+        let round = Island.round(nights: ["n1", "n2", "n3", "n4"], weeks: 3) { _ in false }
+        #expect(round.isElimination)
+        #expect(round.window == ["n2", "n3", "n4"])
+    }
+
     @Test func waitsForEveryScore() {
         let night = Island.night(castaways: ["A", "B"]) { $0 == "A" ? 700 : nil }
         #expect(!night.isComplete)
