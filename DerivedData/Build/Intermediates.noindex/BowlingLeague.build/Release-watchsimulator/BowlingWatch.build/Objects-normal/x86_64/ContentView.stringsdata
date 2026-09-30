@@ -1,0 +1,144 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingWatch/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Bowling",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Motion sensors aren't available on this device.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "End",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "Starting…",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start Session",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "This session",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ mph",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld rpm",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Arm length %@ m",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "Waiting for a shot",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "mph",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld rpm wrist",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Waiting for a shot",
+        "location": {
+          "startingColumn": 84,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Arm Length",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ m",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "Shoulder to palm. Used to turn arm swing into ball speed.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 143
+        }
+      }
+    ]
+  },
+  "version": 1
+}

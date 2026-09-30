@@ -1,0 +1,232 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/BowlerDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Bowler",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stats",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "History",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "This is me",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Average",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Handicap",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Switches to bowled average after %lld games (%lld to go).",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Average follows bowled games (%lld+ games bowled).",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Use bowled average (%lld)",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Average",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "On the Island",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Out for the season",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Swimming. Needs the highest series to get back on.",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Has immunity",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Island",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove from League",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Back to League",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "Doubles with %@",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open Bowling League on your Apple Watch while you bowl. Each shot is saved here automatically.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "Last %lld shots",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 164
+        }
+      },
+      {
+        "comment": "",
+        "key": "mph",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "Shot",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 157
+        }
+      },
+      {
+        "comment": "",
+        "key": "mph",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 157
+        }
+      },
+      {
+        "comment": "",
+        "key": "Shot",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 159
+        }
+      },
+      {
+        "comment": "",
+        "key": "mph",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 159
+        }
+      },
+      {
+        "comment": "",
+        "key": "Motion",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 170
+        }
+      }
+    ]
+  },
+  "version": 1
+}

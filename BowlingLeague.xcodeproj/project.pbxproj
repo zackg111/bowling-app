@@ -525,6 +525,8 @@
 				INFOPLIST_FILE = "BowlingWatch-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Bowling League";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Records your bowling sessions as workouts so the watch can keep measuring your swing.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Saves your bowling sessions as workouts in Health.";
 				INFOPLIST_KEY_NSMotionUsageDescription = "Measures your arm swing to estimate ball release speed and wrist rotation.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.goodnite.bowl;
@@ -562,6 +564,8 @@
 				INFOPLIST_FILE = "BowlingWatch-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Bowling League";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Records your bowling sessions as workouts so the watch can keep measuring your swing.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Saves your bowling sessions as workouts in Health.";
 				INFOPLIST_KEY_NSMotionUsageDescription = "Measures your arm swing to estimate ball release speed and wrist rotation.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.goodnite.bowl;

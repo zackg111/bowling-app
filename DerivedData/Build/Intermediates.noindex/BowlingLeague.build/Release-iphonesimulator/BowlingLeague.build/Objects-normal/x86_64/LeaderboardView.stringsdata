@@ -1,0 +1,128 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/LeaderboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Leaderboard",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 106
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mark yourself with This is me to keep your watch shots",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add your league's bowlers on the Bowlers tab to get started.",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 112
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter a night's games to fill this leaderboard.",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Bowlers Yet",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Scores Yet",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "You",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "average",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "top %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 153
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ mph",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 187
+        }
+      }
+    ]
+  },
+  "version": 1
+}

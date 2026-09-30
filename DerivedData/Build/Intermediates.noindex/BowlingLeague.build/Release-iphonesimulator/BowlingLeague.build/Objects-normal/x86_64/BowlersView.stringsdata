@@ -1,0 +1,296 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/BowlersView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Bowlers",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Find a bowler",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete %@ and all their scores?",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sort",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Bowler",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete Forever",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Bowlers Yet",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add everyone who bowls in the league.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Bowler",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 95
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Back",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 122
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Back",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 125
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete Forever",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "Former Bowlers",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 130
+        }
+      },
+      {
+        "comment": "",
+        "key": "Removed bowlers keep their history. Add them back any time.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "High %lld · %lld games",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "hcp %lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bowler",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "Average",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "Handicap",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 172
+        }
+      },
+      {
+        "comment": "",
+        "key": "Games",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 173
+        }
+      },
+      {
+        "comment": "",
+        "key": "High Game",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "High Series",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 172
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 173
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove from League",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Bowler",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 207
+        }
+      },
+      {
+        "comment": "",
+        "key": "Average",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 222
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 224
+        }
+      }
+    ]
+  },
+  "version": 1
+}

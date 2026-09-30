@@ -1,0 +1,166 @@
+{
+  "" : {
+    "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeague-primary.swiftconstvalues",
+    "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeague-primary.d",
+    "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeague-primary.dia",
+    "emit-module-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeague-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeague-primary-emit-module.dia",
+    "pch" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeague-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeague-primary.swiftdeps"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/BowlingLeagueApp.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeagueApp.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeagueApp.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlingLeagueApp.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Logic/BowlerStats.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerStats.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerStats.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerStats.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Logic/DoublesPairing.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/DoublesPairing.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/DoublesPairing.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/DoublesPairing.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Logic/Eliminator.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Eliminator.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Eliminator.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Eliminator.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Logic/HandicapRule.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/HandicapRule.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/HandicapRule.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/HandicapRule.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Logic/Island.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Island.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Island.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Island.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Logic/MotionStats.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/MotionStats.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/MotionStats.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/MotionStats.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Logic/Ranking.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Ranking.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Ranking.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Ranking.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Models/Bowler.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Bowler.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Bowler.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Bowler.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Models/Entry.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Entry.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Entry.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Entry.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Models/Night.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Night.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Night.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Night.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Models/Shot.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Shot.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Shot.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Shot.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Models/WatchScoring.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/WatchScoring.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/WatchScoring.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/WatchScoring.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/AvatarView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/AvatarView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/AvatarView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/AvatarView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/BowlerDetailView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerDetailView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerDetailView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerDetailView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/BowlerSearchView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerSearchView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerSearchView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlerSearchView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/BowlersView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlersView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlersView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/BowlersView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/DoublesView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/DoublesView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/DoublesView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/DoublesView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/EliminatorView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/EliminatorView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/EliminatorView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/EliminatorView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/InGameView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/InGameView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/InGameView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/InGameView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/IslandView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/IslandView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/IslandView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/IslandView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/LeaderboardView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/LeaderboardView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/LeaderboardView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/LeaderboardView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/NightDetailView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/NightDetailView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/NightDetailView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/NightDetailView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/NightsView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/NightsView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/NightsView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/NightsView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/RootView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/RootView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/RootView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/RootView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/SettingsView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/Theme.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Theme.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Theme.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/Theme.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/Shared/GameSheet.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/GameSheet.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/GameSheet.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/GameSheet.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/Shared/ShotLink.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/ShotLink.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/ShotLink.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/ShotLink.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/Shared/SwingAnalysis.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SwingAnalysis.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SwingAnalysis.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-iphonesimulator/BowlingLeague.build/Objects-normal/arm64/SwingAnalysis.o"
+  }
+}

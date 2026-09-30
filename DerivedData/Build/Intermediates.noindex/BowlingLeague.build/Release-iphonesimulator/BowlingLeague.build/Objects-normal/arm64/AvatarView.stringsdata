@@ -1,0 +1,16 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/AvatarView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Remove Photo",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 90
+        }
+      }
+    ]
+  },
+  "version": 1
+}

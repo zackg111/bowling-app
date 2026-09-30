@@ -1,0 +1,176 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/InGameView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Game",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Game %lld",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "Undo",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "Game %lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next: %@",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start Game %lld",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 192
+        }
+      },
+      {
+        "comment": "",
+        "key": "Frame %lld · Ball %lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "The last ball was entered as a count, so pick how many fell.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 251
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld down · %lld left",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record Miss",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record Strike",
+        "location": {
+          "startingColumn": 88,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record Spare",
+        "location": {
+          "startingColumn": 106,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record %lld",
+        "location": {
+          "startingColumn": 124,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pin %lld",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 329
+        }
+      },
+      {
+        "comment": "",
+        "key": "knocked down",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 330
+        }
+      },
+      {
+        "comment": "",
+        "key": "standing",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 330
+        }
+      },
+      {
+        "comment": "",
+        "key": "already down",
+        "location": {
+          "startingColumn": 75,
+          "startingLine": 330
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 320
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,46 @@
+{
+  "" : {
+    "const-values" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatch-primary.swiftconstvalues",
+    "dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatch-primary.d",
+    "diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatch-primary.dia",
+    "emit-module-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatch-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatch-primary-emit-module.dia",
+    "pch" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatch-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatch-primary.swiftdeps"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingWatch/BowlingWatchApp.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatchApp.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatchApp.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/BowlingWatchApp.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingWatch/ContentView.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/BowlingWatch/ShotTracker.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ShotTracker.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ShotTracker.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ShotTracker.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/Shared/GameSheet.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/GameSheet.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/GameSheet.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/GameSheet.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/Shared/ShotLink.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ShotLink.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ShotLink.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/ShotLink.o"
+  },
+  "/Volumes/Extra/XCode/The League/bowling-app/Shared/SwingAnalysis.swift" : {
+    "index-unit-output-path" : "/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/SwingAnalysis.o",
+    "llvm-bc" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/SwingAnalysis.bc",
+    "object" : "/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Intermediates.noindex/BowlingLeague.build/Release-watchsimulator/BowlingWatch.build/Objects-normal/arm64/SwingAnalysis.o"
+  }
+}

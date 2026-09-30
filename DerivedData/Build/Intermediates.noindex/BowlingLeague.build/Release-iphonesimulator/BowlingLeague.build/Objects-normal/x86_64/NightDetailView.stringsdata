@@ -1,0 +1,152 @@
+{
+  "source": "/Volumes/Extra/XCode/The League/bowling-app/BowlingLeague/Views/NightDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "View",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "In-Game Mode",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Bowlers",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bowlers",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "Night title",
+        "location": {
+          "startingColumn": 78,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Title",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open in Maps",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bowling alley or address",
+        "location": {
+          "startingColumn": 92,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Location",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Absent · blind %lld a game, counted on the Island only",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "Avg %lld · Hcp %lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "with hcp",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "Who's Bowling?",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 228
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add %lld",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 237
+        }
+      }
+    ]
+  },
+  "version": 1
+}
