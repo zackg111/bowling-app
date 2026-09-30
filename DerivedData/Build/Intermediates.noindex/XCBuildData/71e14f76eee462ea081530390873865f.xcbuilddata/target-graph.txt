@@ -1,6 +1,0 @@
-Target dependency graph (3 targets)
-Target 'BowlingLeagueTests' in project 'BowlingLeague'
-➜ Explicit dependency on target 'BowlingLeague' in project 'BowlingLeague'
-Target 'BowlingLeague' in project 'BowlingLeague'
-➜ Explicit dependency on target 'BowlingWatch' in project 'BowlingLeague'
-Target 'BowlingWatch' in project 'BowlingLeague' (no dependencies)

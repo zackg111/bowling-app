@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Volumes/Extra/XCode/The League/bowling-app/DerivedData/Build/Products/Release-iphonesimulator/BowlingLeague.app/BowlingLeague'
-relocations:     []
-...
