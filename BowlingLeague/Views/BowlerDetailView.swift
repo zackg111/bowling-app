@@ -5,10 +5,11 @@ import Charts
 struct BowlerDetailView: View {
     @Bindable var bowler: Bowler
     @Environment(\.handicapRule) private var rule
+    @Environment(\.bowledAverageAfter) private var bowledAverageAfter
     @Environment(\.modelContext) private var context
 
     private var history: [Entry] {
-        bowler.entries.sorted { ($0.night?.date ?? .distantPast) > ($1.night?.date ?? .distantPast) }
+        (bowler.entries ?? []).sorted { ($0.night?.date ?? .distantPast) > ($1.night?.date ?? .distantPast) }
     }
 
     var body: some View {
@@ -32,6 +33,14 @@ struct BowlerDetailView: View {
                         .multilineTextAlignment(.trailing)
                 }
                 LabeledContent("Handicap", value: "\(rule.perGame(average: bowler.average)) a game, \(rule.series(average: bowler.average)) a series")
+                if let after = bowledAverageAfter {
+                    let toGo = after - stats.gamesBowled
+                    Text(toGo > 0
+                         ? "Switches to bowled average after \(after) games (\(toGo) to go)."
+                         : "Average follows bowled games (\(after)+ games bowled).")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
                 if let computed = stats.average, computed != bowler.average {
                     Button("Use bowled average (\(computed))") { bowler.average = computed }
                 }
@@ -50,7 +59,7 @@ struct BowlerDetailView: View {
                 .listRowInsets(EdgeInsets())
             }
 
-            if !bowler.shots.isEmpty || bowler.isPrimary {
+            if !(bowler.shots ?? []).isEmpty || bowler.isPrimary {
                 MotionSection(bowler: bowler)
             }
 
@@ -96,8 +105,10 @@ private struct HistoryRow: View {
                     .bold()
                     .frame(minWidth: 44, alignment: .trailing)
             }
-            if let partner = entry.partnerName {
-                Label("Doubles with \(partner)", systemImage: "person.2.fill")
+            // One partner per doubles spot; "themselves" when drawn with themselves.
+            let partners = entry.partnerNames.map { $0 == entry.bowler?.name ? "themselves" : $0 }
+            if !partners.isEmpty {
+                Label("Doubles with \(partners.formatted(.list(type: .and)))", systemImage: "person.2.fill")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
@@ -111,7 +122,7 @@ private struct MotionSection: View {
 
     var body: some View {
         let motion = bowler.motionStats
-        let recent = Array(bowler.shots.sorted { $0.date < $1.date }.suffix(50).enumerated())
+        let recent = Array((bowler.shots ?? []).sorted { $0.date < $1.date }.suffix(50).enumerated())
         Section {
             if motion.shots == 0 {
                 Text("Open Bowling League on your Apple Watch while you bowl. Each shot is saved here automatically.")

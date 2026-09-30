@@ -3,11 +3,13 @@ import SwiftData
 
 @Model
 final class Bowler {
-    var name: String
+    // Every stored property has a default and every relationship is optional:
+    // iCloud sync (CloudKit) requires both.
+    var name = ""
     /// The average the league uses for handicap. Entered by hand to start;
     /// `BowlerStats` can suggest one from bowled games.
-    var average: Int
-    var createdAt: Date
+    var average = 0
+    var createdAt = Date.now
     /// Profile photo, downscaled JPEG. Stored outside the database file.
     @Attribute(.externalStorage) var photoData: Data?
     /// False once the bowler has left the league. Their history and stats stay.
@@ -27,11 +29,11 @@ final class Bowler {
     var isIslandSwimmer: Bool { onIsland && islandSwimming && islandOutDate == nil }
 
     @Relationship(deleteRule: .cascade, inverse: \Entry.bowler)
-    var entries: [Entry] = []
+    var entries: [Entry]? = []
 
     /// Deliveries measured by this bowler's Apple Watch.
     @Relationship(deleteRule: .cascade, inverse: \Shot.bowler)
-    var shots: [Shot] = []
+    var shots: [Shot]? = []
 
     init(name: String, average: Int) {
         self.name = name
@@ -40,6 +42,16 @@ final class Bowler {
     }
 
     var stats: BowlerStats {
-        BowlerStats(nights: entries.map(\.games))
+        BowlerStats(nights: (entries ?? []).map(\.games))
+    }
+
+    /// Once they've bowled `minimumGames` games, their league average follows
+    /// their bowled average (the setting in Settings; nil when it's off).
+    /// Nights already bowled keep the average they were bowled with.
+    func followBowledAverage(after minimumGames: Int?) {
+        guard let minimumGames else { return }
+        let stats = self.stats
+        guard stats.gamesBowled >= minimumGames, let bowled = stats.average, bowled != average else { return }
+        average = bowled
     }
 }

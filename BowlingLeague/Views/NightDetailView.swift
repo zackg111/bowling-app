@@ -10,6 +10,8 @@ struct NightDetailView: View {
     @Bindable var night: Night
     /// Opened from this bowler's history: scroll to their games and highlight them.
     var focus: Bowler? = nil
+    /// Just created: put the cursor in the title so its details get filled in.
+    var isNew = false
     @State private var tab: Tab = .scores
     @State private var showingAddBowlers = false
     @State private var inGame = false
@@ -23,7 +25,7 @@ struct NightDetailView: View {
             .padding()
 
             switch tab {
-            case .scores: ScoresView(night: night, focus: focus)
+            case .scores: ScoresView(night: night, focus: focus, editDetails: isNew)
             case .doubles: DoublesView(night: night)
             case .eliminator: EliminatorView(night: night)
             case .island: IslandView(night: night)
@@ -35,7 +37,7 @@ struct NightDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button("In-Game Mode", systemImage: "figure.bowling") { inGame = true }
-                .disabled(night.entries.isEmpty)
+                .disabled(night.sortedEntries.isEmpty)
             Button("Add Bowlers", systemImage: "person.badge.plus") { showingAddBowlers = true }
         }
         .sheet(isPresented: $showingAddBowlers) { AddBowlersToNightView(night: night) }
@@ -52,16 +54,21 @@ struct NightDetailView: View {
 struct ScoresView: View {
     let night: Night
     var focus: Bowler? = nil
+    var editDetails = false
     @Environment(\.modelContext) private var context
+    @FocusState private var titleFocused: Bool
 
     var body: some View {
         ScrollViewReader { proxy in
             scores
                 .task {
-                    guard let focus, let entry = night.entries.first(where: { $0.bowler == focus }) else { return }
-                    // Give the list a moment to lay out before scrolling.
+                    // Give the list a moment to lay out before scrolling or focusing.
                     try? await Task.sleep(for: .milliseconds(150))
-                    withAnimation { proxy.scrollTo(entry.persistentModelID, anchor: .center) }
+                    if editDetails {
+                        titleFocused = true
+                    } else if let focus, let entry = night.entries?.first(where: { $0.bowler == focus }) {
+                        withAnimation { proxy.scrollTo(entry.persistentModelID, anchor: .center) }
+                    }
                 }
         }
     }
@@ -71,6 +78,7 @@ struct ScoresView: View {
             Section {
                 TextField("Title", text: Bindable(night).title, prompt: Text("Night title"))
                     .font(.headline)
+                    .focused($titleFocused)
                     .submitLabel(.done)
                 HStack {
                     Label {
@@ -111,6 +119,7 @@ struct ScoresView: View {
 struct EntryRow: View {
     @Bindable var entry: Entry
     @Environment(\.handicapRule) private var rule
+    @Environment(\.bowledAverageAfter) private var bowledAverageAfter
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -143,6 +152,9 @@ struct EntryRow: View {
             }
         }
         .padding(.vertical, 4)
+        .onChange(of: entry.games) {
+            entry.bowler?.followBowledAverage(after: bowledAverageAfter)
+        }
     }
 
     private func gameField(_ title: String, _ value: Binding<Int?>) -> some View {
@@ -193,7 +205,7 @@ struct AddBowlersToNightView: View {
     @State private var selected: Set<PersistentIdentifier> = []
 
     private var available: [Bowler] {
-        let already = Set(night.entries.compactMap { $0.bowler?.persistentModelID })
+        let already = Set((night.entries ?? []).compactMap { $0.bowler?.persistentModelID })
         return bowlers.filter { $0.isActive && !already.contains($0.persistentModelID) }
     }
 

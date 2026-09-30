@@ -8,6 +8,7 @@ import UIKit
 struct InGameView: View {
     let night: Night
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.bowledAverageAfter) private var bowledAverageAfter
     @State private var game = 1
     @State private var currentID: PersistentIdentifier?
     /// Pins tapped down for the ball being entered.
@@ -98,6 +99,7 @@ struct InGameView: View {
         let frameBefore = sheet.next?.frame
         guard change(&sheet) else { return }
         entry.setSheet(sheet, for: game)
+        entry.bowler?.followBowledAverage(after: bowledAverageAfter)
         history.append((entry.persistentModelID, game))
         knocked = []
         // Frame over: on to the next bowler, like the lanes do.
@@ -112,6 +114,7 @@ struct InGameView: View {
         var sheet = entry.sheet(last.game)
         sheet.undo()
         entry.setSheet(sheet, for: last.game)
+        entry.bowler?.followBowledAverage(after: bowledAverageAfter)
         game = last.game
         currentID = last.bowler
         knocked = []

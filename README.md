@@ -27,17 +27,24 @@ Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
   totals, it moves to the next bowler after each frame, Undo steps back across
   bowlers, and a finished game becomes that bowler's score
   (`Logic/GameSheet.swift`). Typed scores only accept 0–300.
-- **Doubles**: pair everyone (blind draw or high-with-low), then teams rank
-  by combined Total With Handicap. An odd bowler out is listed separately.
+- **Doubles**: each bowler has doubles spots (usually 1; 2 puts them on two
+  teams; 0 sits them out). Draw teams blind or high-with-low, pick teams by
+  hand, or pick some and draw the rest. Someone with two spots can be drawn
+  with themselves. Swipe a team to break it up. Teams rank by combined Total
+  With Handicap, and each bowler's history remembers their partners.
+- **Bowled average**: in Settings, averages switch to the bowled average once
+  a bowler has bowled a set number of games (9 by default) and keep updating
+  as they bowl. Nights already bowled keep the handicap they were bowled with.
 - **Eliminator**: handicapped game-by-game cut. Half the field, rounded up
   to the nearest even number, moves on after games 1 and 2 (25 → 14 → 8).
   Game 3's top 3 cash with 14 to 19 entrants, top 4 with 20 to 25 (cutoff in Settings).
   Ties at a cut all move on. Entry is a per-bowler toggle.
-- **Spreadsheet data**: loaded automatically the first time the app opens on
-  an empty league (and still offered on the empty Home and Bowlers screens) —
-  the Saturday Night Special spreadsheet (`Models/SeedData.swift`): all 42 bowlers
-  and averages, plus a Sep 26 night with the 29 bowlers on the sheet, the games
-  entered so far, the 27 eliminator entrants and the 13 Island castaways.
+- **New installs start empty**: add your own bowlers and nights.
+- **iCloud**: SwiftData syncs through CloudKit (`iCloud.com.goodnite.bowl`),
+  so the league is backed up, restores on a new phone, and stays in step on
+  every device signed in to the same Apple Account. Without iCloud it works on
+  the device alone. Each new build copies the database to
+  `Application Support/Backups` before opening it.
 - **Island**: the season-long survivor game from the sheet's Island tab.
   High handicap series among castaways wins immunity for next week. Low
   series (immunity holder excluded) is kicked off and goes swimming. A

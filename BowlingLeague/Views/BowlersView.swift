@@ -76,9 +76,9 @@ struct BowlersView: View {
                 ContentUnavailableView {
                     Label("No Bowlers Yet", systemImage: "figure.bowling")
                 } description: {
-                    Text("Add everyone who bowls in the league, or load everything from the Saturday Night Special spreadsheet.")
+                    Text("Add everyone who bowls in the league.")
                 } actions: {
-                    Button("Load Saturday Night Special Spreadsheet") { SeedData.loadSpreadsheet(into: context) }
+                    Button("Add Bowler", systemImage: "plus") { showingAdd = true }
                         .buttonStyle(.glassProminent)
                 }
             }

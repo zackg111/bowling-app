@@ -108,14 +108,8 @@ struct LeaderboardView: View {
         .navigationDestination(item: $podiumPick) { BowlerDetailView(bowler: $0) }
         .overlay {
             if bowlers.isEmpty {
-                ContentUnavailableView {
-                    Label("No Bowlers Yet", systemImage: "trophy")
-                } description: {
-                    Text("Load the Saturday Night Special spreadsheet, or add bowlers on the Bowlers tab.")
-                } actions: {
-                    Button("Load Saturday Night Special Spreadsheet") { SeedData.loadSpreadsheet(into: context) }
-                        .buttonStyle(.glassProminent)
-                }
+                ContentUnavailableView("No Bowlers Yet", systemImage: "trophy",
+                                       description: Text("Add your league's bowlers on the Bowlers tab to get started."))
             } else if ranked.isEmpty {
                 ContentUnavailableView("No Scores Yet", systemImage: "trophy",
                                        description: Text("Enter a night's games to fill this leaderboard."))

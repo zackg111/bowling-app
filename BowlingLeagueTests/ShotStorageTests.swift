@@ -11,7 +11,7 @@ struct ShotStorageTests {
 
     init() throws {
         container = try ModelContainer(for: Bowler.self, Night.self, Entry.self, Shot.self,
-                                       configurations: ModelConfiguration(isStoredInMemoryOnly: true))
+                                       configurations: ModelConfiguration(isStoredInMemoryOnly: true, cloudKitDatabase: .none))
     }
 
     let shot = ShotMetrics(date: .now, releaseSpeedMPH: 16.2, wristRotationRPM: 300)
@@ -21,7 +21,7 @@ struct ShotStorageTests {
         context.insert(me)
         me.makePrimary(in: context)
         Shot.receive(shot, in: context)
-        #expect(me.shots.count == 1)
+        #expect(me.shots?.count == 1)
         #expect(me.latestShot?.releaseSpeedMPH == 16.2)
     }
 
@@ -43,6 +43,6 @@ struct ShotStorageTests {
         let me = Bowler(name: "Me", average: 200)
         context.insert(me)
         me.makePrimary(in: context)
-        #expect(me.shots.count == 1)
+        #expect(me.shots?.count == 1)
     }
 }

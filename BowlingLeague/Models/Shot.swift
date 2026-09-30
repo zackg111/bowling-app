@@ -4,9 +4,10 @@ import SwiftData
 /// One delivery measured by the bowler's Apple Watch.
 @Model
 final class Shot {
-    var date: Date
-    var releaseSpeedMPH: Double
-    var wristRotationRPM: Double
+    // Defaults on everything, for iCloud sync.
+    var date = Date.now
+    var releaseSpeedMPH = 0.0
+    var wristRotationRPM = 0.0
     /// Nil when a shot arrived before anyone was marked "This is me".
     var bowler: Bowler?
 
@@ -35,10 +36,10 @@ extension Shot {
 
 extension Bowler {
     var motionStats: MotionStats {
-        MotionStats(speeds: shots.map(\.releaseSpeedMPH), wristRPMs: shots.map(\.wristRotationRPM))
+        MotionStats(speeds: (shots ?? []).map(\.releaseSpeedMPH), wristRPMs: (shots ?? []).map(\.wristRotationRPM))
     }
 
-    var latestShot: Shot? { shots.max { $0.date < $1.date } }
+    var latestShot: Shot? { shots?.max { $0.date < $1.date } }
 
     /// Marks this bowler as the phone's owner, clears it on everyone else, and
     /// hands them any watch shots that arrived before anyone was marked.

@@ -4,6 +4,8 @@ struct SettingsView: View {
     @AppStorage("handicapBase") private var handicapBase = 230
     @AppStorage("handicapPercent") private var handicapPercent = 80
     @AppStorage("fourPlacesFrom") private var fourPlacesFrom = 20
+    @AppStorage("useBowledAverage") private var useBowledAverage = true
+    @AppStorage("bowledAverageGames") private var bowledAverageGames = 9
 
     var body: some View {
         Form {
@@ -15,6 +17,19 @@ struct SettingsView: View {
             } footer: {
                 let rule = HandicapRule(base: handicapBase, percent: handicapPercent)
                 Text("\(handicapPercent)% of (\(handicapBase) − average) per game. A 190 average gets \(rule.perGame(average: 190)) a game, \(rule.series(average: 190)) a series.")
+            }
+
+            Section {
+                Toggle("Use bowled average", isOn: $useBowledAverage)
+                if useBowledAverage {
+                    Stepper("After \(bowledAverageGames) games", value: $bowledAverageGames, in: 1...60)
+                }
+            } header: {
+                Text("Average")
+            } footer: {
+                Text(useBowledAverage
+                     ? "Once a bowler has bowled \(bowledAverageGames) games, their average switches to their bowled average and keeps updating as they bowl. Nights already bowled keep their handicap."
+                     : "Averages only change when you edit them.")
             }
 
             Section {

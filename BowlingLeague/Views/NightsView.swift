@@ -4,6 +4,8 @@ import SwiftData
 struct NightsView: View {
     @Environment(\.modelContext) private var context
     @Query(sort: \Night.date, order: .reverse) private var nights: [Night]
+    /// A night just added with +, opened right away.
+    @State private var newNight: Night?
 
     var body: some View {
         List {
@@ -23,7 +25,7 @@ struct NightsView: View {
 
                         VStack(alignment: .leading, spacing: 2) {
                             Text(night.title).font(.headline)
-                            Text("\(night.entries.count) bowlers")
+                            Text("\((night.entries ?? []).count) bowlers")
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                             if !night.location.isEmpty {
@@ -44,12 +46,15 @@ struct NightsView: View {
         .laneBackground()
         .navigationTitle("Nights")
         .navigationDestination(for: Night.self) { NightDetailView(night: $0) }
+        .navigationDestination(item: $newNight) { NightDetailView(night: $0, isNew: true) }
         .toolbar {
             Button("New Night", systemImage: "plus") {
                 // Leagues usually bowl at the same place, so carry the last location over.
                 let night = Night()
                 night.location = nights.first?.location ?? ""
                 context.insert(night)
+                // Open it straight away so its details can be filled in.
+                newNight = night
             }
         }
         .overlay {
