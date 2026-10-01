@@ -78,14 +78,14 @@ final class SocialService {
         }
     }
 
-    /// Makes or updates your profile.
-    func saveProfile(name: String, center: String, photo: Data?, average: Int) async throws {
+    /// Makes or updates your profile from your bowler: name, center, photo,
+    /// average, and age, height and weight if you show them.
+    func saveProfile(from bowler: Bowler) async throws {
         guard let myID else { throw SocialError.noProfile }
         var profile = me ?? PublicProfile(id: myID)
-        profile.name = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        profile.center = center.trimmingCharacters(in: .whitespacesAndNewlines)
-        profile.photo = photo
-        profile.average = average
+        profile.name = bowler.name.trimmingCharacters(in: .whitespacesAndNewlines)
+        profile.photo = bowler.photoData.flatMap { AvatarPicker.downscaled($0, maxSide: 256) }
+        apply(bowler, to: &profile)
         try await save(profile)
         if status != .ready {
             status = .ready
@@ -93,11 +93,23 @@ final class SocialService {
         }
     }
 
-    /// Keeps the average on your profile in step with your league average.
-    func updateAverage(_ average: Int) async {
-        guard var profile = me, profile.average != average else { return }
-        profile.average = average
+    /// Keeps your profile in step with your bowler (a new average, a
+    /// birthday passing, an edit on another device) without re-sending the photo.
+    func syncProfile(from bowler: Bowler) async {
+        guard var profile = me else { return }
+        let before = profile
+        apply(bowler, to: &profile)
+        guard profile != before else { return }
         try? await save(profile)
+    }
+
+    private func apply(_ bowler: Bowler, to profile: inout PublicProfile) {
+        profile.center = bowler.homeCenter.trimmingCharacters(in: .whitespacesAndNewlines)
+        profile.average = bowler.average
+        let shares = bowler.sharesBodyStats
+        profile.age = shares ? bowler.age : nil
+        profile.heightInches = shares ? bowler.heightInches : nil
+        profile.weightPounds = shares ? bowler.weightPounds : nil
     }
 
     private func save(_ profile: PublicProfile) async throws {
@@ -161,6 +173,18 @@ final class SocialService {
         guard key.count >= 2 else { return [] }
         let records = try await query(PublicProfile.recordType, NSPredicate(format: "nameKey BEGINSWITH %@", key), limit: 50)
         return Self.byName(records.compactMap { PublicProfile(record: $0, myID: myID) }.filter { $0.id != myID })
+    }
+
+    /// Everyone in the app whose name or home center starts with this, names first.
+    func searchEveryone(_ text: String) async throws -> [PublicProfile] {
+        let key = text.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        guard key.count >= 2 else { return [] }
+        async let byName = search(key)
+        async let atCenter = query(PublicProfile.recordType, NSPredicate(format: "centerKey BEGINSWITH %@", key), limit: 50)
+        let names = try await byName
+        let centers = try await atCenter.compactMap { PublicProfile(record: $0, myID: myID) }
+            .filter { profile in profile.id != myID && !names.contains { $0.id == profile.id } }
+        return names + Self.byName(centers)
     }
 
     /// Everyone whose home center is yours.
@@ -263,7 +287,11 @@ final class SocialService {
             guard let owner = bowler.isPrimary ? myID : bowler.profileID else { continue }
             series += bowler.bowledSeries(as: owner)
         }
-        if let primary = bowlers.first(where: \.isPrimary) { await updateAverage(primary.average) }
+        if let primary = bowlers.first(where: \.isPrimary) {
+            // Profiles made before the center lived on your bowler kept it only here.
+            if primary.homeCenter.isEmpty, let center = me?.center, !center.isEmpty { primary.homeCenter = center }
+            await syncProfile(from: primary)
+        }
 
         let ledgerKey = "sharedSeries-\(myID)"
         var ledger = UserDefaults.standard.dictionary(forKey: ledgerKey) as? [String: String] ?? [:]

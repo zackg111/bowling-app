@@ -7,8 +7,13 @@ struct BowlingLeagueApp: App {
 
     /// The iCloud container the league syncs through.
     static let cloudContainer = "iCloud.com.goodnite.bowl"
+    /// False when iCloud couldn't be set up and the league is on this device only.
+    static private(set) var syncsWithiCloud = false
 
     init() {
+        // Watch iCloud sync from the start, so a restore can show its progress.
+        CloudSyncMonitor.shared.start()
+        SettingsSync.start()
         container = Self.makeContainer()
         let context = container.mainContext
 
@@ -42,6 +47,7 @@ struct BowlingLeagueApp: App {
         let schema = Schema([Bowler.self, Night.self, Entry.self, Shot.self, Ball.self])
         let cloud = ModelConfiguration(schema: schema, cloudKitDatabase: .private(cloudContainer))
         if let container = try? ModelContainer(for: schema, configurations: cloud) {
+            syncsWithiCloud = true
             return container
         }
         // iCloud couldn't be set up (e.g. missing entitlement): same file, this device only.

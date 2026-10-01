@@ -153,6 +153,8 @@ struct ProfileHeader: View {
     let photo: Data?
     let center: String
     let average: Int?
+    /// Age, height and weight, e.g. "34 yrs · 5′ 10″ · 180 lb". Empty to hide.
+    var details = ""
     var followers: Int?
     var following: Int?
 
@@ -170,6 +172,11 @@ struct ProfileHeader: View {
                         Label(center, systemImage: "mappin.and.ellipse")
                             .font(.subheadline)
                             .foregroundStyle(Theme.accent)
+                    }
+                    if !details.isEmpty {
+                        Text(details)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
                     }
                 }
                 Spacer(minLength: 0)

@@ -18,6 +18,7 @@ struct ProfileView: View {
     @State private var editing = false
     @State private var filtering = false
     @State private var comparing = false
+    @State private var settingUp = false
 
     var body: some View {
         Group {
@@ -25,9 +26,12 @@ struct ProfileView: View {
                 profile(me)
             } else {
                 ContentUnavailableView {
-                    Label("Who Are You?", systemImage: "person.crop.circle.badge.questionmark")
+                    Label("Set Up Your Profile", systemImage: "person.crop.circle.badge.plus")
                 } description: {
-                    Text("Open yourself in Bowlers and turn on This is me. Your stats, rankings and arsenal show up here.")
+                    Text("Tell us who you are. Your stats, rankings and arsenal show up here, and friends can find you.")
+                } actions: {
+                    Button("Set Up Profile") { settingUp = true }
+                        .buttonStyle(.glassProminent)
                 }
             }
         }
@@ -38,12 +42,16 @@ struct ProfileView: View {
                 Label("Friends", systemImage: "person.2")
             }
             .badge(social.requests.count)
-            if !primaries.isEmpty {
-                Button("Edit Profile", systemImage: "gearshape") { editing = true }
+            Button("Edit Profile", systemImage: "gearshape") {
+                // Nobody's marked "This is me" yet: run the full setup instead.
+                if primaries.isEmpty { settingUp = true } else { editing = true }
             }
         }
         .sheet(isPresented: $editing) {
             if let me = primaries.first { ProfileEditorView(bowler: me) }
+        }
+        .fullScreenCover(isPresented: $settingUp) {
+            OnboardingView()
         }
     }
 
@@ -54,7 +62,8 @@ struct ProfileView: View {
         return ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 ProfileHeader(name: social.me?.name ?? me.name, photo: me.photoData,
-                              center: social.me?.center ?? "", average: me.average,
+                              center: me.homeCenter.isEmpty ? social.me?.center ?? "" : me.homeCenter,
+                              average: me.average, details: me.bodySummary,
                               followers: social.status == .ready ? social.followers.count : nil,
                               following: social.status == .ready ? social.following.count : nil)
                 SocialBanner(editing: $editing)
@@ -174,7 +183,7 @@ struct ProfileRow: View {
     }
 }
 
-/// Your name, home center and photo as friends see them.
+/// Your name, home center, photo, and age, height and weight.
 struct ProfileEditorView: View {
     @Bindable var bowler: Bowler
     @Environment(SocialService.self) private var social
@@ -182,6 +191,10 @@ struct ProfileEditorView: View {
     @Query(sort: \Night.date, order: .reverse) private var nights: [Night]
     @State private var name = ""
     @State private var center = ""
+    @State private var birthday: Date?
+    @State private var heightInches: Int?
+    @State private var weightText = ""
+    @State private var sharesBodyStats = false
     @State private var saving = false
     @State private var error: String?
 
@@ -196,19 +209,52 @@ struct ProfileEditorView: View {
                 Section {
                     TextField("Name", text: $name)
                         .textContentType(.name)
-                    TextField("Home bowling center", text: $center)
+                    HomeCenterField(center: $center)
                 } footer: {
                     Text("Friends find you by name, and see your stats and the nights you've bowled: scores, centers and balls. Your league's settings and the other bowlers in it stay private.")
                 }
+
+                Section {
+                    if let birthday {
+                        DatePicker("Birthday", selection: Binding(get: { birthday }, set: { self.birthday = $0 }),
+                                   in: ...Date.now, displayedComponents: .date)
+                            .swipeActions { Button("Remove", role: .destructive) { self.birthday = nil } }
+                    } else {
+                        Button("Add Birthday", systemImage: "birthday.cake") {
+                            birthday = Calendar.current.date(byAdding: .year, value: -30, to: .now)
+                        }
+                    }
+                    Picker("Height", selection: $heightInches) {
+                        Text("Not set").tag(Int?.none)
+                        ForEach(48...90, id: \.self) { Text(BodyFormat.height($0)).tag(Optional($0)) }
+                    }
+                    LabeledContent("Weight") {
+                        HStack(spacing: 4) {
+                            TextField("Not set", text: $weightText)
+                                .keyboardType(.numberPad)
+                                .multilineTextAlignment(.trailing)
+                            if !weightText.isEmpty { Text("lb").foregroundStyle(.secondary) }
+                        }
+                    }
+                    Toggle("Show to friends", isOn: $sharesBodyStats)
+                } header: {
+                    Text("About you")
+                } footer: {
+                    Text(sharesBodyStats
+                         ? "Friends see your age (not your birthday), height and weight on your profile."
+                         : "Only you see these. Turn on Show to friends to put them on your profile.")
+                }
+
                 if social.status == .noAccount {
                     Section {
-                        Label("Sign in to iCloud in Settings first.", systemImage: "icloud.slash")
+                        Label("Sign in to iCloud to share your profile with friends. These are saved on this phone either way.", systemImage: "icloud.slash")
                     }
                 }
                 if let error {
                     Section { Text(error).foregroundStyle(.red) }
                 }
             }
+            .scrollDismissesKeyboard(.interactively)
             .laneBackground()
             .navigationTitle(social.me == nil ? "Set Up Profile" : "Edit Profile")
             .navigationBarTitleDisplayMode(.inline)
@@ -219,13 +265,22 @@ struct ProfileEditorView: View {
                         ProgressView()
                     } else {
                         Button("Save") { Task { await save() } }
-                            .disabled(name.trimmingCharacters(in: .whitespaces).isEmpty || social.myID == nil)
+                            .disabled(name.trimmingCharacters(in: .whitespaces).isEmpty)
                     }
                 }
             }
             .onAppear {
                 name = social.me?.name ?? bowler.name
-                center = social.me?.center ?? nights.first(where: { !$0.location.isEmpty })?.location ?? ""
+                center = !bowler.homeCenter.isEmpty ? bowler.homeCenter
+                    : social.me?.center ?? nights.first(where: { !$0.location.isEmpty })?.location ?? ""
+                birthday = bowler.birthday
+                heightInches = bowler.heightInches
+                weightText = bowler.weightPounds.map(String.init) ?? ""
+                sharesBodyStats = bowler.sharesBodyStats
+            }
+            .onChange(of: weightText) { _, new in
+                let digits = String(new.filter(\.isWholeNumber).prefix(3))
+                if digits != new { weightText = digits }
             }
         }
     }
@@ -233,9 +288,19 @@ struct ProfileEditorView: View {
     private func save() async {
         saving = true
         defer { saving = false }
+        // Saved on your bowler first, so it's kept even without iCloud.
+        bowler.name = name.trimmingCharacters(in: .whitespaces)
+        bowler.homeCenter = center.trimmingCharacters(in: .whitespaces)
+        bowler.birthday = birthday
+        bowler.heightInches = heightInches
+        bowler.weightPounds = Int(weightText).flatMap { $0 > 0 ? $0 : nil }
+        bowler.sharesBodyStats = sharesBodyStats
+        guard social.myID != nil else {
+            dismiss()
+            return
+        }
         do {
-            let photo = bowler.photoData.flatMap { AvatarPicker.downscaled($0, maxSide: 256) }
-            try await social.saveProfile(name: name, center: center, photo: photo, average: bowler.average)
+            try await social.saveProfile(from: bowler)
             dismiss()
         } catch {
             self.error = error.localizedDescription

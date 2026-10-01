@@ -20,6 +20,14 @@ final class Bowler {
     /// they're linked. Their games here are shared to it once they approve.
     var profileID: String?
 
+    /// About you, for your profile. Private unless `sharesBodyStats` is on.
+    var homeCenter = ""
+    var birthday: Date?
+    var heightInches: Int?
+    var weightPounds: Int?
+    /// Show age, height and weight to friends on your profile.
+    var sharesBodyStats = false
+
     /// Island (the season-long survivor game).
     var onIsland = false
     var hasImmunity = false

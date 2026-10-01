@@ -4,8 +4,6 @@ import SwiftData
 /// Find and follow friends, answer league link requests, and see who follows you.
 struct FriendsView: View {
     @Environment(SocialService.self) private var social
-    @State private var searchText = ""
-    @State private var results: [PublicProfile] = []
     @State private var error: String?
 
     var body: some View {
@@ -14,17 +12,12 @@ struct FriendsView: View {
                 ContentUnavailableView("Set Up Your Profile", systemImage: "person.crop.circle.badge.plus",
                                        description: Text("Make a profile from the gear button on Profile, then come back to find friends."))
                     .listRowBackground(Color.clear)
-            } else if !searchText.isEmpty {
-                Section("Bowlers") {
-                    ForEach(results) { profile in
-                        NavigationLink { FriendProfileView(profile: profile) } label: { ProfileRow(profile: profile) }
-                    }
-                    if results.isEmpty {
-                        Text("Nobody by that name yet. Friends show up once they've set up a profile.")
-                            .foregroundStyle(.secondary)
+            } else {
+                Section {
+                    NavigationLink { FindBowlersView() } label: {
+                        Label("Find Bowlers", systemImage: "magnifyingglass")
                     }
                 }
-            } else {
                 if !social.requests.isEmpty {
                     Section {
                         ForEach(social.requests) { request in
@@ -38,7 +31,7 @@ struct FriendsView: View {
                 }
                 Section("Following") {
                     if social.following.isEmpty {
-                        Text("Search for friends by name to follow them.").foregroundStyle(.secondary)
+                        Text("Use Find Bowlers to search for friends and follow them.").foregroundStyle(.secondary)
                     }
                     ForEach(social.following) { profile in
                         NavigationLink { FriendProfileView(profile: profile) } label: { ProfileRow(profile: profile) }
@@ -75,16 +68,11 @@ struct FriendsView: View {
         }
         .laneBackground()
         .navigationTitle("Friends")
-        .searchable(text: $searchText, prompt: "Find bowlers by name")
-        .task(id: searchText) {
-            // Wait for a pause in typing before searching.
-            try? await Task.sleep(for: .milliseconds(350))
-            guard !Task.isCancelled else { return }
-            do {
-                results = try await social.search(searchText)
-                error = nil
-            } catch {
-                self.error = error.localizedDescription
+        .toolbar {
+            if social.status == .ready {
+                NavigationLink { FindBowlersView() } label: {
+                    Label("Find Bowlers", systemImage: "magnifyingglass")
+                }
             }
         }
         .refreshable { await social.loadConnections() }
@@ -136,6 +124,8 @@ struct FriendProfileView: View {
             VStack(alignment: .leading, spacing: 20) {
                 ProfileHeader(name: profile.name, photo: profile.photo, center: profile.center,
                               average: profile.average > 0 ? profile.average : nil,
+                              details: BodyFormat.summary(age: profile.age, heightInches: profile.heightInches,
+                                                          weightPounds: profile.weightPounds),
                               following: profile.following.count)
                 HStack(spacing: 12) {
                     if social.isFollowing(profile) {

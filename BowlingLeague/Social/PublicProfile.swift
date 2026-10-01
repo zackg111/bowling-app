@@ -11,6 +11,10 @@ struct PublicProfile: Identifiable, Hashable, Sendable {
     var average = 0
     /// Small JPEG.
     var photo: Data?
+    /// Only there when they've chosen to show them.
+    var age: Int?
+    var heightInches: Int?
+    var weightPounds: Int?
     /// Who they follow.
     var following: [String] = []
     /// Friends they've allowed to share league nights they scored for them.
@@ -38,6 +42,9 @@ struct PublicProfile: Identifiable, Hashable, Sendable {
         center = record["center"] as? String ?? ""
         average = record["average"] as? Int ?? 0
         photo = record["photo"] as? Data
+        age = record["age"] as? Int
+        heightInches = record["heightInches"] as? Int
+        weightPounds = record["weightPounds"] as? Int
         following = record["following"] as? [String] ?? []
         trustedScorers = record["trustedScorers"] as? [String] ?? []
     }
@@ -51,6 +58,9 @@ struct PublicProfile: Identifiable, Hashable, Sendable {
         record["centerKey"] = center.lowercased()
         record["average"] = average
         record["photo"] = photo
+        record["age"] = age
+        record["heightInches"] = heightInches
+        record["weightPounds"] = weightPounds
         record["following"] = following
         record["trustedScorers"] = trustedScorers
     }

@@ -18,6 +18,11 @@ struct RootView: View {
     @Environment(\.modelContext) private var context
     @Environment(\.scenePhase) private var scenePhase
     @State private var social = SocialService.shared
+    /// Setup has been finished or skipped once on this device.
+    @AppStorage("didOnboard") private var didOnboard = false
+    @State private var onboarding = false
+    /// This iCloud account already has a league: setup starts by restoring it.
+    @State private var restoreFirst = false
 
     private var bowledAverageAfter: Int? { useBowledAverage ? bowledAverageGames : nil }
 
@@ -56,7 +61,26 @@ struct RootView: View {
         // changed. Again whenever the app comes back or goes away.
         .task {
             await social.refresh()
+            // First launch: set up who you are, unless that's already done
+            // (you're marked "This is me" and have a profile).
+            if !didOnboard {
+                let hasMe = ((try? context.fetchCount(FetchDescriptor<Bowler>(predicate: #Predicate { $0.isPrimary }))) ?? 0) > 0
+                if hasMe && social.status == .ready {
+                    didOnboard = true
+                } else {
+                    // A reinstall or new phone on the same Apple Account: bring the
+                    // league back first instead of starting over.
+                    if !hasMe && social.status != .noAccount {
+                        restoreFirst = await CloudSyncMonitor.iCloudHasLeague() || social.me != nil
+                    }
+                    onboarding = true
+                }
+            }
             await social.shareLeague(from: context)
+        }
+        .fullScreenCover(isPresented: $onboarding) {
+            OnboardingView(restoring: restoreFirst) { didOnboard = true }
+                .environment(social)
         }
         .onChange(of: scenePhase) { _, phase in
             guard phase != .inactive else { return }

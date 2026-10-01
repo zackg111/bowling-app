@@ -50,6 +50,23 @@ Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
   series (immunity holder excluded) is kicked off and goes swimming. A
   swimmer gets back on by bowling the night's highest series, otherwise
   they're out for the season. "Record Island Results" applies it.
+- **Setup** (first launch, or Profile's gear when nobody is "This is me"):
+  pick yourself from the league or add yourself, then name, photo, average
+  and home center. Saves your profile for friends when iCloud is signed in.
+  Skip leaves everything as it was.
+- **Restore**: on a new phone or after reinstalling, signed in to the same
+  Apple Account, setup notices the league in iCloud and starts with Restore.
+  It waits for the bowlers, nights and scores to come down, shows the counts,
+  and skips setup if you were already "This is me". Also under Welcome ›
+  Restore from iCloud and Settings › iCloud. Settings (handicap, average,
+  eliminator, Island) sync through iCloud key-value storage
+  (`Sync/SettingsSync.swift`); the league itself through SwiftData.
+- **Home center**: picked from Apple Maps. With location allowed, bowling
+  centers within about 25 miles are listed nearest first; type to search by
+  name, or use the name as typed (`Views/BowlingCenterPicker.swift`).
+- **About you** (Profile's gear): birthday, height and weight, kept on your
+  bowler. Friends see your age (never the birthday), height and weight only
+  with Show to friends turned on.
 - **Profile** (second tab): your own page, built on whoever is marked "This
   is me". Three sections:
   - **Stats**: average, high score, first-ball average, clean %, a score chart
@@ -88,7 +105,8 @@ Social lives in the **public** database of `iCloud.com.goodnite.bowl`, so no
 server is needed. The league itself stays in each person's private database.
 See `Social/SocialService.swift`.
 - `Profile` (`profile-<user ID>`): owner, name, nameKey, center, centerKey,
-  average, photo, following, trustedScorers.
+  average, photo, age, heightInches, weightPounds (Int(64), only when
+  shared), following, trustedScorers.
 - `Series` (`series-<profile ID>-<time>`): profileID, date, payload (one night's
   games as JSON). Posted by the bowler or by a friend scoring them. A friend's
   series only count once the bowler lists that friend in trustedScorers.
