@@ -46,6 +46,10 @@ struct BowlerDetailView: View {
                 }
             }
 
+            if !bowler.isPrimary {
+                LinkedAccountSection(bowler: bowler)
+            }
+
             Section {
                 Toggle("On the Island", systemImage: "leaf.fill", isOn: $bowler.onIsland)
                 if bowler.onIsland {

@@ -16,6 +16,8 @@ struct RootView: View {
     @AppStorage("useBowledAverage") private var useBowledAverage = true
     @AppStorage("bowledAverageGames") private var bowledAverageGames = 9
     @Environment(\.modelContext) private var context
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var social = SocialService.shared
 
     private var bowledAverageAfter: Int? { useBowledAverage ? bowledAverageGames : nil }
 
@@ -25,6 +27,9 @@ struct RootView: View {
         TabView {
             Tab("Home", systemImage: "trophy") {
                 NavigationStack { LeaderboardView() }
+            }
+            Tab("Profile", systemImage: "person.crop.circle") {
+                NavigationStack { ProfileView() }
             }
             Tab("Bowlers", systemImage: "figure.bowling") {
                 NavigationStack { BowlersView() }
@@ -46,6 +51,17 @@ struct RootView: View {
         .environment(\.handicapRule, HandicapRule(base: handicapBase, percent: handicapPercent))
         .environment(\.eliminatorRule, EliminatorRule(fourPlacesFrom: fourPlacesFrom))
         .environment(\.bowledAverageAfter, bowledAverageAfter)
+        .environment(social)
+        // Find your iCloud account and profile, then share any games that
+        // changed. Again whenever the app comes back or goes away.
+        .task {
+            await social.refresh()
+            await social.shareLeague(from: context)
+        }
+        .onChange(of: scenePhase) { _, phase in
+            guard phase != .inactive else { return }
+            Task { await social.shareLeague(from: context) }
+        }
         // On launch and whenever the setting changes, bring everyone who has
         // bowled enough games onto their bowled average.
         .task(id: bowledAverageAfter) {

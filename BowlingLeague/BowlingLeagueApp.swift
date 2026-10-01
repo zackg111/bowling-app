@@ -39,7 +39,7 @@ struct BowlingLeagueApp: App {
     /// Without iCloud it keeps working on this device and syncs once signed in.
     private static func makeContainer() -> ModelContainer {
         backUpStore()
-        let schema = Schema([Bowler.self, Night.self, Entry.self, Shot.self])
+        let schema = Schema([Bowler.self, Night.self, Entry.self, Shot.self, Ball.self])
         let cloud = ModelConfiguration(schema: schema, cloudKitDatabase: .private(cloudContainer))
         if let container = try? ModelContainer(for: schema, configurations: cloud) {
             return container

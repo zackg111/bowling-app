@@ -16,6 +16,9 @@ final class Bowler {
     var isActive = true
     /// The person using this phone ("This is me"). At most one bowler.
     var isPrimary = false
+    /// The friend's own account (their iCloud user ID for this app), once
+    /// they're linked. Their games here are shared to it once they approve.
+    var profileID: String?
 
     /// Island (the season-long survivor game).
     var onIsland = false
@@ -34,6 +37,10 @@ final class Bowler {
     /// Deliveries measured by this bowler's Apple Watch.
     @Relationship(deleteRule: .cascade, inverse: \Shot.bowler)
     var shots: [Shot]? = []
+
+    /// Their arsenal.
+    @Relationship(deleteRule: .cascade, inverse: \Ball.bowler)
+    var balls: [Ball]? = []
 
     init(name: String, average: Int) {
         self.name = name

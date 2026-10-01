@@ -50,21 +50,74 @@ Built from the "Saturday Night Special" spreadsheet (Doubles&Eliminator tab).
   series (immunity holder excluded) is kicked off and goes swimming. A
   swimmer gets back on by bowling the night's highest series, otherwise
   they're out for the season. "Record Island Results" applies it.
+- **Profile** (second tab): your own page, built on whoever is marked "This
+  is me". Three sections:
+  - **Stats**: average, high score, first-ball average, clean %, a score chart
+    (tap a game to see it), strike/leave/split rings, pin leaves with how often
+    each is picked up, a radar chart, and how far you are from the next
+    average tier. **Filter** by center (each night's location), ball, the
+    last N games, or last month / last year / all time. First-ball stats and
+    leaves come from games scored ball by ball in in-game mode.
+  - **Ranking**: monthly boards (high game, average, best 3-game block,
+    strike on strike, endurance = games bowled) for you and the friends you
+    follow, or everyone whose home center is yours.
+  - **Arsenal**: your balls (name, brand, weight, photo) with games and
+    average for each. Pick the ball for a night under the bowler's games on
+    the Scores tab.
+  - **Compare**: you against a friend, with the better number highlighted,
+    both score lines, and both radar charts.
+- **Friends** (Profile › person button): everyone keeps their own Apple
+  Account and their own league. Find bowlers by name, follow them, and open
+  their stats. A bowler in your league can be **linked to their account**
+  (their page in Bowlers › Friend account). They get a request, and once
+  they approve, the nights you score for them count on their own profile.
+  Only that bowler's games are shared, never the rest of your league.
 - **Settings**: handicap base/percent and when the eliminator pays 4 places.
 - **Look**: rounded type, a lane-light orange accent, a bowling lane (maple
   boards, arrows, dots and pins) drawn behind every screen (`Views/Theme.swift`), glass stat tiles, glass
   score pills that glow gold for 200+ games, and date badges on nights.
-- **Layout**: iOS 26 Liquid Glass `TabView` (Home, Bowlers, Nights, Settings, Search).
+- **Layout**: iOS 26 Liquid Glass `TabView` (Home, Profile, Bowlers, Nights, Settings, Search).
   On iPad the tab bar becomes a sidebar (`.sidebarAdaptable`); on iPhone it
   shrinks while you scroll.
 
 Handicap is the sheet's formula: `MAX(0, ROUNDDOWN((230 − average) × 0.8) × 3)`
 for the series, a third of that per game (223 → 5/game, 15/series; 240 → 0).
 
+## Friends in iCloud (public database)
+Social lives in the **public** database of `iCloud.com.goodnite.bowl`, so no
+server is needed. The league itself stays in each person's private database.
+See `Social/SocialService.swift`.
+- `Profile` (`profile-<user ID>`): owner, name, nameKey, center, centerKey,
+  average, photo, following, trustedScorers.
+- `Series` (`series-<profile ID>-<time>`): profileID, date, payload (one night's
+  games as JSON). Posted by the bowler or by a friend scoring them. A friend's
+  series only count once the bowler lists that friend in trustedScorers.
+- `LinkRequest` (`link-<scorer>-<profile ID>`): profileID, scorerName, bowlerName.
+
+Only a record's creator can change it, which is CloudKit's default for the
+public database. The app also checks each record's creator, so a profile or a
+night can't be posted on someone else's behalf. Changed nights are shared
+when the app opens, comes back, or goes to the background.
+
+**One-time setup in the CloudKit Console** (icloud.developer.apple.com):
+running the app in Development creates the record types. Then add these
+indexes under Schema › Indexes, and deploy the schema to Production before
+TestFlight or the App Store:
+| Record type | Field | Index |
+|---|---|---|
+| Profile | nameKey | Queryable |
+| Profile | centerKey | Queryable |
+| Profile | following | Queryable |
+| Series | profileID | Queryable |
+| LinkRequest | profileID | Queryable |
+
 ## Data model
 - `Bowler`: name, average, photo, isActive, Island status → many `Entry`
 - `Night`: title, date, islandRecorded → many `Entry`
-- `Entry`: bowler + night, average snapshot, game1–3, doublesTeam, inEliminator
+- `Entry`: bowler + night, average snapshot, game1–3, doublesTeam, inEliminator,
+  gameBalls (ball name per game)
+- `Ball`: name, brand, weight, photo, isRetired → bowler
+- `Bowler.profileID`: the friend account a league bowler is linked to
 
 Pure logic (no SwiftUI) lives in `Logic/` and is covered by `BowlingLeagueTests`.
 

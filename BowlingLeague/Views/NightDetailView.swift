@@ -156,6 +156,9 @@ struct EntryRow: View {
                     gameField("G2", $entry.game2)
                     gameField("G3", $entry.game3)
                 }
+                if let balls = entry.bowler?.activeBalls, !balls.isEmpty {
+                    BallMenu(entry: entry, balls: balls)
+                }
             }
         }
         .padding(.vertical, 4)
@@ -173,6 +176,31 @@ struct EntryRow: View {
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity)
             .glassEffect(isBig ? .regular.tint(Theme.strike.opacity(0.25)) : .regular, in: .capsule)
+    }
+}
+
+/// Which ball from their arsenal they threw tonight.
+private struct BallMenu: View {
+    let entry: Entry
+    let balls: [Ball]
+
+    var body: some View {
+        let current = entry.ball(for: 1)
+        Menu {
+            Picker("Ball", selection: Binding(get: { current }, set: { entry.setBall($0) })) {
+                Text("None").tag(String?.none)
+                ForEach(balls) { Text($0.name).tag(Optional($0.name)) }
+                // A ball since retired or renamed still shows.
+                if let current, !balls.contains(where: { $0.name == current }) {
+                    Text(current).tag(Optional(current))
+                }
+            }
+        } label: {
+            Label(current ?? "Pick a ball", systemImage: "circle.circle")
+                .font(.caption.weight(.medium))
+                .foregroundStyle(current == nil ? AnyShapeStyle(.secondary) : AnyShapeStyle(Theme.accent))
+        }
+        .buttonStyle(.borderless)
     }
 }
 

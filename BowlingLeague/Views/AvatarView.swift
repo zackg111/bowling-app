@@ -4,12 +4,28 @@ import UIKit
 
 /// A bowler's photo, or their initials on a color picked from their name.
 struct AvatarView: View {
-    let bowler: Bowler
+    let name: String
+    let photoData: Data?
     var size: CGFloat = 40
+
+    init(bowler: Bowler, size: CGFloat = 40) {
+        self.init(name: bowler.name, photoData: bowler.photoData, size: size)
+    }
+
+    /// A friend's profile.
+    init(profile: PublicProfile, size: CGFloat = 40) {
+        self.init(name: profile.name, photoData: profile.photo, size: size)
+    }
+
+    init(name: String, photoData: Data?, size: CGFloat = 40) {
+        self.name = name
+        self.photoData = photoData
+        self.size = size
+    }
 
     var body: some View {
         Group {
-            if let data = bowler.photoData, let image = PhotoCache.image(for: data) {
+            if let data = photoData, let image = PhotoCache.image(for: data) {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFill()
@@ -28,12 +44,12 @@ struct AvatarView: View {
     }
 
     private var initials: String {
-        bowler.name.split(separator: " ").prefix(2).compactMap(\.first).map(String.init).joined()
+        name.split(separator: " ").prefix(2).compactMap(\.first).map(String.init).joined()
     }
 
     private var color: Color {
         let palette: [Color] = [.blue, .purple, .pink, .orange, .teal, .indigo, .green, .red, .mint, .cyan]
-        let hash = bowler.name.unicodeScalars.reduce(0) { ($0 &* 31 &+ Int($1.value)) & 0x7fffffff }
+        let hash = name.unicodeScalars.reduce(0) { ($0 &* 31 &+ Int($1.value)) & 0x7fffffff }
         return palette[hash % palette.count]
     }
 }

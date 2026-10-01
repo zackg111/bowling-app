@@ -33,6 +33,9 @@ final class Entry {
     var isAbsent = false
     /// In-game mode's ball-by-ball sheets for games 1–3, as JSON.
     var sheetsData: Data?
+    /// The ball used for each game, by name ("" for none), so history keeps
+    /// the name if the ball is later deleted.
+    var gameBalls: [String] = []
 
     init(bowler: Bowler, night: Night, inEliminator: Bool = true) {
         self.bowler = bowler
@@ -141,6 +144,17 @@ final class Entry {
         } else if wasComplete {
             setGame(number, to: nil)
         }
+    }
+
+    /// The ball used for game 1, 2 or 3.
+    func ball(for number: Int) -> String? {
+        let name = gameBalls.indices.contains(number - 1) ? gameBalls[number - 1] : ""
+        return name.isEmpty ? nil : name
+    }
+
+    /// Sets the ball for all three games.
+    func setBall(_ name: String?) {
+        gameBalls = name.map { Array(repeating: $0, count: 3) } ?? []
     }
 
     /// What an absent bowler is credited with for each game on the Island:
