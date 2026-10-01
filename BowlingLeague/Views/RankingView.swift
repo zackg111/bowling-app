@@ -109,7 +109,9 @@ struct RankingView: View {
                 for profile in profiles {
                     group.addTask { (profile, try await social.series(for: profile)) }
                 }
-                return try await group.reduce(into: []) { $0.append($1) }
+                var loaded: [(PublicProfile, [BowledSeries])] = []
+                for try await result in group { loaded.append(result) }
+                return loaded
             }
             others = loaded.map { profile, series in
                 Person(id: profile.id, name: profile.name, photo: profile.photo, isMe: false, series: series)
